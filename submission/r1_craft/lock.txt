@@ -1,0 +1,9 @@
+round: r1_craft
+slice: B4-center
+sha256: 34bc63d57a96f592abe7c1091da7c700bdd63c7f56317727ad46796d863f768b
+code: 34BC-63D5
+locked_at: 2026-09-28T17:52:53+07:00
+shapes: box=29, polygon=12
+prefill_kept: 1
+prefill_edited: 3
+new: 25
