@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,20,Vật ở giữa khung dễ gán đúng; rủi ro chính là bỏ sót vật nhỏ ở xa,Giữ đủ mẫu normal để đo baseline và phát hiện drift giữa annotator
+front,hard,35,Người đi bộ/xe hai bánh cắt ngang sát cản trước; vật bị vòng kính cắt ở rìa; ngược sáng,Camera trước quyết định cảnh báo va chạm nên ưu tiên hard nhiều nhất; lỗi truncated và rider/xe hai bánh tập trung ở rìa
+rear,normal,20,Cảnh lùi chậm và lặp lại; rủi ro nhãn trùng giữa các frame gần nhau,Đủ mẫu normal để so sánh; lấy thưa theo thời gian để tránh frame gần trùng
+rear,hard,30,Trẻ em/vật thấp sát cản sau; ego_body chiếm nhiều khung; ban đêm với đèn lùi,Vật thấp gần xe dễ bị che bởi thân xe ego và dễ nhầm ignore_region
+left,normal,15,Mặt đường và xe đỗ bên cạnh; ít vật động,Cảnh bên thường đơn giản hơn nên giữ ít normal
+left,hard,30,Seam trước-trái và sau-trái; xe máy vượt sát; vạch ô đỗ bị méo mạnh ở rìa,Vùng seam có thể cho một vật hai box ở hai camera; cần mẫu để đặt policy trùng/không trùng
+right,normal,15,Tương tự camera trái; lề đường và vỉa hè,Giữ cân bằng với camera trái để so sánh
+right,hard,35,Seam trước-phải và sau-phải; người đi bộ trên vỉa hè bị che; curb và vạch đỗ khi đỗ song song,Camera phía lề đường gặp người đi bộ và vật che nhiều nhất; nhiều ca occluded/truncated cần review
