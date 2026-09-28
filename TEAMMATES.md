@@ -87,8 +87,11 @@ Các mốc dưới đây ghi theo hồ sơ B4-center của Duy. Mốc nào có t
   `reviewed_reference_or_model: false`, kiểm lại rework FA15-D3EC).
 - [ ] C xác nhận báo cáo đúng bản khóa, các file đầy đủ và check exit 0: Vũ Minh Duy. `check` đã exit 0 nhưng cần chạy lại
   sau khi bổ sung peer QA B2-mid.
-- [ ] manifest.json tại commit chốt có failed_gates rỗng. Tại `f906bcb` là `failed_gates: []`.
-- [ ] Repo nhóm Public, ảnh và các bằng chứng mở được.
-- [ ] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố.
+- [x] manifest.json tại commit chốt có failed_gates rỗng. Tại `f906bcb` là `failed_gates: []` (đã kiểm lại tại
+  `af24852`, bản mới nhất trên nhánh Duy, vẫn `failed_gates: []`).
+- [x] Repo nhóm Public, ảnh và các bằng chứng mở được. Đã xác nhận qua GitHub API (`"private": false`) và mở thử
+  các ảnh/screenshot trong repo, đều xem được.
+- [ ] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố. Chưa xác minh được — "đã push" thì đúng
+  (nhiều commit đã lên GitHub), nhưng việc gửi link qua kênh lớp là hành động ngoài repo, chỉ Duy tự xác nhận được.
 
 Chỉ đánh dấu việc đã kiểm thật. Nhóm nộp một hồ sơ chung; check không tự chấm đóng góp từng người. Giữ nguyên header/các cột enum của findings.csv; tên người được ghi trong tài liệu này hoặc phần note thích hợp.
