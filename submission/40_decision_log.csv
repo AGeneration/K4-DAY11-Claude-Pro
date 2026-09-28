@@ -1,1 +1,2 @@
 id,date,question,decision,rationale,status
+D9,2026-09-28,"C0: lens_border import lệch nhẹ so với vành kính thật (đáy lệch vào ~12 px, góc dưới phải lệch ra ~10-20 px)","Giữ nguyên polygon import, không vẽ lại","R08: chỉ sửa khi lệch vòng kính thật; độ lệch <2% bán kính, không chạm vật nào, không đổi quyết định gán nhãn",resolved
