@@ -26,3 +26,5 @@ Check chỉ xác nhận hình thức/độ đầy đủ, không thay review ch�
 Nhánh đích: `NguyenLeTheAnh-2A202602164` trong `AGeneration/K4-DAY11-Claude-Pro`. Chỉ bàn giao hồ sơ và bằng chứng cần thiết; profile trình duyệt, cache, bản sao local, ZIP trung gian và lịch sử bài hai ảnh không đưa lên Git.
 
 Chi tiết review Duy: [submission/r2_qa/qa_review.md](submission/r2_qa/qa_review.md). Bốn finding QA của Duy thay bốn dòng tự review B2 cũ; tổng vẫn 48 dòng. R1/rework của Anh và số đo B2 giữ nguyên. Lấy dữ liệu GitHub không thay cho vòng import/export CVAT còn thiếu của bản rework Anh.
+
+Bản import đã đóng gói: [B2-dense-rework-import.zip](submission/rework/B2-dense-rework-import.zip). Xem [hướng dẫn rework](submission/rework/README.md) và [overlay](submission/rework/rework_overlay.html). Đã kiểm ZIP chứa đúng XML khóa 00BC-F291 và đủ ba ảnh; chưa xác nhận Save/export trên CVAT.

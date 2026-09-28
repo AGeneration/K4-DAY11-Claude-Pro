@@ -20,3 +20,4 @@ PEER-01,2026-09-28,Ai review ai,Anh review Duy B4-center theo team.json,Thay col
 PEER-02,2026-09-28,Duy vừa push lại,Dùng commit 79fdaac; giữ nguyên R1 và rework mới,Đã kiểm SHA256 R1 34BC-63D5 và rework FA15-D3EC; QA R1 và đối chiếu rework tách riêng,accepted
 PEER-03,2026-09-28,Các ca peer QA còn mở,Escalate QA-DUY-02/03/04 cho qa và Duy,Bất nhất biểu diễn occluded; hai người chồng nhau; dắt hay ngồi bị che/blur; chưa có phê duyệt,escalated
 PEER-04,2026-09-28,Truncated polygon Bike group 2,Đề nghị Duy đồng bộ với box tại 270517,Biên ảnh cắt xe; rework mới vẫn giữ polygon false và box true; không sửa file khóa của Duy,proposed
+PACK-01,2026-09-28,Yêu cầu tạo bản rework để nộp,Đóng gói XML sửa đã khóa 00BC-F291 thành ZIP import CVAT,Giữ bytes và bản R1; kiểm 3 frame/hash/hình học; tạo overlay và tính lại delta theo findings hiện tại; chưa xác minh export CVAT,proposed
