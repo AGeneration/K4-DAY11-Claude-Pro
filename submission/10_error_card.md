@@ -7,18 +7,22 @@
 | center | B2 | BOX_GEOMETRY | 1 |
 | center | B2 | MISSING | 11 |
 | center | B2 | SPURIOUS | 12 |
+| center | B4 | ATTRIBUTE | 1 |
+| center | B4 | BOX_GEOMETRY | 1 |
 | center | C0 | SPURIOUS | 2 |
 | edge | B2 | SPURIOUS | 2 |
+| edge | B4 | ATTRIBUTE | 1 |
 | mid | B2 | MISSING | 4 |
 | mid | B2 | SPURIOUS | 4 |
-| mid | B2 | WRONG_CLASS | 2 |
-| unknown | B2 | STRUCTURE | 9 |
+| mid | B2 | WRONG_CLASS | 1 |
+| mid | B4 | WRONG_CLASS | 1 |
+| unknown | B2 | STRUCTURE | 6 |
 | unknown | C0 | IGNORE_SCOPE | 1 |
 
 ## Top defects
 - SPURIOUS: 20 (ví dụ frame adasind_019560.jpg)
 - MISSING: 15 (ví dụ frame adasind_062370.jpg)
-- STRUCTURE: 9 (ví dụ frame adasind_069450.jpg)
+- STRUCTURE: 6 (ví dụ frame adasind_069450.jpg)
 
 ## Phân tích của bạn
 
@@ -29,4 +33,6 @@ Hồ sơ job30 có 48 dòng findings qua các pha, không phải 48 vật hoặc
 - **Model:** Sáu ThreeWheeler được M gọi Truck trên ba frame; ba rider bị tách Pedestrian; SUV 117120 cũng bị gọi Truck. Đây là tín hiệu lặp cho giả thuyết lệch taxonomy/miền mục tiêu, chưa chứng minh nguyên nhân là fisheye. Kiểm mapping, policy rider và output gần trùng M8/M10 tại 117120 trước kết luận.
 - **Trước/sau:** Công cụ tính matched 15→19, missing 5→1, spurious 4→2. Missing còn lại là R7; hai spurious còn lại là Bus/ThreeWheeler 117120 đang escalation. Đây là độ khớp teaching reference chưa phê duyệt gold, không phải điểm rubric. Giữ số thật, không cố đạt 100%.
 - **Owner và bằng chứng:** annotator nhận sửa nhãn có căn cứ; qa nhận R7, L3/L7 của 117120 và C0 L2/L8; ai_team kiểm taxonomy model. Xem screenshots/03-b2-van.png, 04-b2-scope.png, 05-reference-duplicate.png, 06-model-taxonomy.png, 07-job30-frame3.png và local_quality_conflicts.csv.
-- **Nguồn và giới hạn:** R1 là nguyên XML export job30 đã khóa E4B2-125A, đủ ba ảnh. Rework 00BC-F291 là đề xuất chỉnh sửa tại máy, chưa có vòng import/export CVAT được xác minh. K12 đã ghi giảm, không giả lập số polygon. Review có trợ lý hỗ trợ và kế thừa lịch sử hai ảnh đầu; không mạo nhận là review độc lập mới của Duy.
+- **Nguồn và giới hạn:** R1 là nguyên XML export job30 đã khóa E4B2-125A, đủ ba ảnh. Rework 00BC-F291 là đề xuất chỉnh sửa tại máy, chưa có vòng import/export CVAT được xác minh. K12 đã ghi giảm, không giả lập số polygon. Review có trợ lý hỗ trợ và kế thừa lịch sử hai ảnh đầu; không mạo nhận Duy review bài Anh. Peer QA hiện là Anh review Duy B4-center; lịch sử tự review B2 giữ riêng.
+
+- **Peer QA B4-center:** bốn dòng r2_qa thuộc bài Duy tại commit 79fdaac, không thuộc số đo B2. Một bất nhất truncated cần đồng bộ; ba ca chuyển qa xác minh biểu diễn occluded, hình học hai người và dắt/ngồi. Không coi các ca chưa phân xử là lỗi đã xác nhận; không cộng số dòng thành tỷ lệ lỗi.

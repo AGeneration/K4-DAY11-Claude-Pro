@@ -86,13 +86,13 @@
     },
     {
       "file": "r2_qa/qa_review.md",
-      "lines": 15,
-      "sha256": "5259a4df55c90e37742e7b1ea6fedd1980361f30e8e974799f959952b0656162"
+      "lines": 30,
+      "sha256": "c6d4e95b170ae4439f09e9ab1880e4a052f5e50cccad5cc36f3ef4a06166d603"
     },
     {
       "file": "r2_qa/qa_overlay.html",
-      "lines": 50,
-      "sha256": "cf2f70d3263c962d6144d583d0d461b7b895e5ac05c46816b633341801f7dad1"
+      "lines": 70,
+      "sha256": "d8ec681feb1713247fffda1fa77ee10c7e5499aee8710bca814056d83af83f92"
     },
     {
       "file": "r3_diag/local_quality.md",
@@ -148,12 +148,12 @@
     {
       "file": "findings.csv",
       "lines": 49,
-      "sha256": "8740b9cf3606718d02b3366fceda9e0b823a74e4131874cc0030e9f9f85ffb16"
+      "sha256": "c39b29dc5a9bad0d9c6e3ebf317b3e179b0435562de0cfa01a470fa766e62205"
     },
     {
       "file": "10_error_card.md",
-      "lines": 32,
-      "sha256": "89fddc27464441c849153249166f01434298e2ad3d53233748484cf54e732629"
+      "lines": 38,
+      "sha256": "0282bff32979d515a04f7a8d891c0ba104819aa0a7ac48575932fcd8ed529161"
     },
     {
       "file": "20_guideline_patch.md",
@@ -162,13 +162,13 @@
     },
     {
       "file": "30_escalation_ticket.md",
-      "lines": 35,
-      "sha256": "bcbb9f21cd2046e41652e9aac24749a8abaeddcdebd3705276ccacb66fcae88c"
+      "lines": 45,
+      "sha256": "18d6da855ddb77be2e75391ba0e37b88d2e0657d9b2f2b2c400a6003f503ff02"
     },
     {
       "file": "40_decision_log.csv",
-      "lines": 18,
-      "sha256": "e0d28490f44df93c9e54a454023ec79cda789cf31d08d7b731e13ffb6710c7cd"
+      "lines": 22,
+      "sha256": "81d6c492d62c391b768077f6a419af6ffc0b5b10893c20044c2dcc97e3d9d8d3"
     },
     {
       "file": "45_review_plan.md",

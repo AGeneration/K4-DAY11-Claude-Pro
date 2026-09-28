@@ -16,3 +16,7 @@ META-01,2026-09-28,Cảnh báo tên task từ export job,Giữ metadata gốc v�
 JOB30-01,2026-09-28,Nhận export job30 đủ ba ảnh,Khóa lại r1 từ nguyên XML job30; bỏ giảm frame3,Người học đã cung cấp 117120; báo cáo hai ảnh trước đây lưu riêng trong lịch sử local,resolved
 JOB30-02,2026-09-28,Bản sửa local cũ chỉ có hai frame,Tạo lại rework từ r1 job30 đủ ba ảnh và relock,Sửa ca có căn cứ; giữ Bus và ThreeWheeler của 117120 đang escalation; chưa có CVAT roundtrip,proposed
 JOB30-03,2026-09-28,117120 L3/L7 bị báo spurious nhưng có vật thật,Giữ nhãn và nhờ QA phân xử class/reference; AI team kiểm M8/M10,Ảnh 07 cho thấy phương tiện nhỏ và ThreeWheeler bị che; không xóa để tăng precision,escalated
+PEER-01,2026-09-28,Ai review ai,Anh review Duy B4-center theo team.json,Thay cold review B2 bằng dữ liệu Git khóa thật của Duy tại commit 79fdaac; giữ lịch sử cũ,accepted
+PEER-02,2026-09-28,Duy vừa push lại,Dùng commit 79fdaac; giữ nguyên R1 và rework mới,Đã kiểm SHA256 R1 34BC-63D5 và rework FA15-D3EC; QA R1 và đối chiếu rework tách riêng,accepted
+PEER-03,2026-09-28,Các ca peer QA còn mở,Escalate QA-DUY-02/03/04 cho qa và Duy,Bất nhất biểu diễn occluded; hai người chồng nhau; dắt hay ngồi bị che/blur; chưa có phê duyệt,escalated
+PEER-04,2026-09-28,Truncated polygon Bike group 2,Đề nghị Duy đồng bộ với box tại 270517,Biên ảnh cắt xe; rework mới vẫn giữ polygon false và box true; không sửa file khóa của Duy,proposed

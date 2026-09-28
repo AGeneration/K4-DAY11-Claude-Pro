@@ -33,3 +33,13 @@ Các ticket được ghi trong hồ sơ để bàn giao; chưa gửi trực ti�
 - **Expected impact:** Hai nhãn bị tính spurious/FP so với reference nhưng ảnh có phương tiện thật. Xóa để tăng precision có thể bỏ vật hợp lệ. Model còn có hai box khác class gần trùng cho cùng phương tiện.
 - **Owner:** qa; phối hợp ai_team cho M8/M10.
 - **Recommendation:** Soát phương tiện nhỏ cao khoảng 49 px để phân xử Bus/Car/Truck, kiểm reference có thiếu không; soát box/occluded của ThreeWheeler bị ô tô phía trước che. Giữ nhãn người học khi chưa đủ căn cứ; E5 cho L3, nghi E0 cho L7. Không tự nhận reference là gold. Findings các dòng này action=escalate; quyết định JOB30-03.
+
+## Ticket 5 — Peer QA Anh → Duy, B4-center, commit 79fdaac
+
+Owner đề nghị: qa; người cần cung cấp ngữ cảnh: Duy. Trạng thái: escalated trong hồ sơ, chưa gửi/được xác nhận.
+
+- QA-DUY-02, 271039 L1, R05: attribute occluded=true và trường XML occluded=0 không thống nhất. Expected impact: công cụ khác có thể đọc thuộc tính khác lab. Recommendation: xác định trường chuẩn dùng cho bàn giao rồi kiểm vòng import/export; không sửa attribute đúng với ảnh thành false chỉ để khớp.
+- QA-DUY-03, 271039 L12+L13, R02: kiểm từng người ở vùng chồng nhau trước khi sửa geometry/xóa nhãn. Expected impact: tránh gộp hai người hoặc tạo duplicate do suy từ overlap. Recommendation: Duy chỉ rõ phần nhìn thấy của từng người và ghi quyết định; ảnh screenshots/duy-271039.png.
+- QA-DUY-04, 295948 L4 R1, R03: rework tách Pedestrian+Bike nhưng phần xe bị blur/che. Expected impact: thay đổi cách đếm người/xe. Recommendation: xác minh dắt/ngồi từ bằng chứng ảnh hoặc ngữ cảnh được phép; chưa có bằng chứng thì giữ trạng thái chưa phân xử. Ảnh screenshots/duy-295948.png.
+
+Bản khóa R1 34BC-63D5 và rework FA15-D3EC cùng được giữ nguyên trong r2_qa/source_duy. Các mã L trên là của R1; mapping rework nằm trong qa_review.md. Không dùng các ca B4 này để sửa nhãn hay tính delta B2-dense của Anh.

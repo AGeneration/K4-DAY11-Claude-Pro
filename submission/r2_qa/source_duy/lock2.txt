@@ -1,0 +1,9 @@
+round: rework
+slice: B4-center
+sha256: fa15d3ec04e86ec04651ba580dc5d3887dd16d204f332abda5cfd2511c26a1f9
+code: FA15-D3EC
+locked_at: 2026-09-28T21:31:46+07:00
+shapes: box=33, polygon=12
+prefill_kept: 1
+prefill_edited: 3
+new: 29
