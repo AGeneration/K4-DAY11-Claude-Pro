@@ -16,3 +16,10 @@ Mã khóa: 34BC-63D5
 Không thấy vi phạm R07 ở 271039 (không có `ego_body`), R08 (lens_border giữ bản import, bám vành kính) hay R09 (không box nào nằm ≥50% trong ignore).
 
 Ghi finding r2_qa: cell=L_only, rule_id có giá trị, why để trống.
+
+## Kết quả sau P4–P5 (bổ sung, không sửa nhận xét gốc)
+
+- 295948 L4 và L7: bản rework tách cả hai thành `Pedestrian` + `Bike` (người khăn caro chân chạm đất; người áo xanh
+  ngọc không ngồi trên xe đạp chở thùng) — bản rework `FA15-D3EC`, decision log D8.
+- 270517 L8: giữ box `ThreeWheeler` (nằm trong ignore `unreadable` của reference nên không đổi số đo).
+- 271039 L14+L2, 270517 dải tối mép trái, 270517 L2 đáy xe dưới blur: giữ nguyên, lý do ở cột `note` của các dòng `r2_qa`.

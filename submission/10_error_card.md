@@ -36,7 +36,7 @@ trước khi hỏi *vì sao*, vì con số gộp ba nguồn khác nhau:
 - **Nguyên nhân khả dĩ (`why`) và vì sao bạn nghĩ vậy:**
   - *Phần lớn SPURIOUS thuộc model (M_only):* 270517 M5/M10/M11 là người lái và hành khách **ngồi trong** xe ba bánh
     (trái R03); 270517 M6/M7/M9 và 271039 M9/M11/M12 là xe ba bánh bị gọi `Car`/`Truck`, thành cặp FP (class sai) + FN
-    (ThreeWheeler thiếu). Cùng mẫu đã thấy ở C0 (M7/M8 Truck, M1+M2 và M4+M5 tách rider). Model không sinh box
+    (ThreeWheeler thiếu). Cùng mẫu đã thấy ở C0 (M7/M8 Truck; M1+M2 tách người đang ngồi trên xe đạp — còn M4+M5 lại khớp nhãn C0 sau soát lại vì người áo đỏ đang dắt xe). Model không sinh box
     `ThreeWheeler` nào trên 4 frame đã xem → giả thuyết `E4_model_domain` (lớp này và quy ước rider/người-trong-xe không
     có trong dữ liệu huấn luyện của model), có bằng chứng từ ≥9 box ở 3 frame chứ không từ một box lệch. Phép kiểm tiếp:
     đếm class M ghép với mọi `ThreeWheeler` của reference trên 48 frame.
@@ -47,13 +47,13 @@ trước khi hỏi *vì sao*, vì con số gộp ba nguồn khác nhau:
   - *Lỗi thật của mình:* 271039 R10 (người áo vàng, `MISSING`) — nhầm áo vàng với mui xe ba bánh vàng phía sau khi
     vùng này có 5 người và 3 xe chồng nhau; và 270517 L8 đoán class cho một vật mờ cao 42 px thay vì dùng `unreadable`
     (`E1_annotator_error`). Cả hai là ca che khuất dày ở `center`, không phải méo rìa.
-- **Cách sửa và ai nhận việc (`owner`):** `annotator` — đã rework hai ca E1 (center missing 2 → 1, xem `rework/delta.md`),
+- **Cách sửa và ai nhận việc (`owner`):** `annotator` — bản rework `FA15-D3EC` sửa ca E1 R10 (center missing 2 → 1), tách người đứng/dắt xe khỏi xe hai bánh theo R03 ở 295948 và thêm ThreeWheeler sau xe tải; mid/edge vì thế có thêm 1 missing + 2 spurious do bất đồng R03 với reference — xem `rework/delta.md`, decision log D8,
   và từ nay soát riêng từng người trong cụm che khuất bằng crop ≥4x trước khi khoá. `qa` — sửa teaching reference theo
   escalation Ticket 1 (ego_body chữ nhật 295948, P0) và Ticket 2 (vật thiếu 271039, Car→Truck 295948). `guideline` —
   R12 trong `20_guideline_patch.md` (ignore phải bao trọn vật; làm rõ người trên xe ego). `ai_team` — không dùng pre-label
   YOLO26m làm class `ThreeWheeler` hay cho người trong xe; lọc box `Pedestrian` nằm trong box xe trước khi prefill.
 - **Bằng chứng (ảnh trong `screenshots/`, dòng findings, rule):** `screenshots/02_271039_center_conflicts.png` (L2, L8,
   L13, L14, R10 — R01/R09), `screenshots/01_295948_ref_ego_body_rectangle.png` (R07/R10),
-  `screenshots/03_295948_pickup_truck_vs_car.png` (R04, và M6 là gương xe tải); các dòng `r3_diag` của 270517 và
+  `screenshots/03_295948_pickup_truck_vs_car.png` (R04; vật hẹp sau đuôi xe tải — M6 `Car`, rework L9 `ThreeWheeler`, còn E5); các dòng `r3_diag` của 270517 và
   271039 trong `findings.csv`; `r3_diag/model_compare.md`. Giới hạn: 3 frame + 1 frame C0, nên tỷ lệ theo zone chỉ là
   mô tả của slice này.

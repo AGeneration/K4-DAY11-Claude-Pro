@@ -1,9 +1,9 @@
 round: rework
 slice: B4-center
-sha256: 5ae6554f2a005c2d521309dcdda4f94243b4bd2b07123250620638c49527c354
-code: 5AE6-554F
-locked_at: 2026-09-28T18:00:22+07:00
-shapes: box=29, polygon=13
+sha256: fa15d3ec04e86ec04651ba580dc5d3887dd16d204f332abda5cfd2511c26a1f9
+code: FA15-D3EC
+locked_at: 2026-09-28T21:31:46+07:00
+shapes: box=33, polygon=12
 prefill_kept: 1
 prefill_edited: 3
-new: 25
+new: 29

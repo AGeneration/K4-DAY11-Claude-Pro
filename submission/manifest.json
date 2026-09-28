@@ -17,24 +17,24 @@
     },
     {
       "file": "parking/annotations.xml",
-      "lines": 57,
-      "sha256": "5bbde569c344fe08dde9bcf0672aa92ec4b834f991db19079c1db7c15ca19d91"
+      "lines": 58,
+      "sha256": "9085f5134fd2c80f5f65b56dc1669f169cf9db7fdce5bdf1d578fd1732b47bac"
     },
     {
       "file": "parking/observations.md",
       "lines": 18,
-      "sha256": "2bb054785b22aa8d83b3b03e6b13b639e35acb41333b66b17324e6afe42d48d7"
+      "sha256": "782b627285f6cd32973a9b4c2f4e038770333f4e421cad412e114feeb41bd5c1"
     },
     {
       "file": "p1_calib/annotations.xml",
-      "lines": 285,
-      "sha256": "e93784e3bfb5e1ff206d19558c47b70b0d4e11da9bde3f3434e30acfb882e9e0"
+      "lines": 291,
+      "sha256": "a7447d439860eeb186979b4c27e3088f5c1f7cd07f3d4f00eef7743c64220284"
     },
     {
       "file": "p1_calib/lock.txt",
-      "lines": 9,
-      "sha256": "a0b67bc790c1b15ce63f35c87acd4cc53dbd2bb7a2d4d7838fab54919d5da131",
-      "locked_at": "2026-09-28T17:39:07+07:00"
+      "lines": 19,
+      "sha256": "80c8851db34e4ae6ea8e0b95c4ac535ba79f33202e8a7ada1ed2aa4b22cecf8e",
+      "locked_at": "2026-09-28T21:28:12+07:00"
     },
     {
       "file": "p1_calib/reference.txt",
@@ -44,13 +44,13 @@
     },
     {
       "file": "p1_calib/compare.md",
-      "lines": 14,
-      "sha256": "56bb41c7251e00c92dcfd5258a993684ce6606841b88096c468e04e48ac5ef84"
+      "lines": 15,
+      "sha256": "a081cf538f1cc6f064e79320f99571aeea743fe98a405c6466dd31724bad7d5b"
     },
     {
       "file": "p1_calib/compare.html",
-      "lines": 30,
-      "sha256": "7314dc1daf3bb4410246aad6bf70530ff4ba062f015812de2eac4cb16d6211bc"
+      "lines": 32,
+      "sha256": "9450da1c03129349f365155b78989ee2e274fabe0f3d33a51dee6ee33d9d2ab9"
     },
     {
       "file": "r1_craft/annotations.xml",
@@ -65,8 +65,8 @@
     },
     {
       "file": "r1_craft/selfqc.md",
-      "lines": 39,
-      "sha256": "040403695a2ee0eae27d30c04ee64870d469ab33004e15b0a646a2e313c3d477"
+      "lines": 45,
+      "sha256": "a5a38b0484e10b72281bcae6f3c27206e21ff8f72a9fda30b9ba0a8e04433336"
     },
     {
       "file": "r1_craft/reference.txt",
@@ -86,8 +86,8 @@
     },
     {
       "file": "r2_qa/qa_review.md",
-      "lines": 18,
-      "sha256": "be9b6ad7b10f8e7dc73acb6a7c6bfbfed7c4489fbdcb2bca20c8432268b52895"
+      "lines": 25,
+      "sha256": "c2571aa7c21822473e9051632ffb03d35b4b1c8362e32291146e197fd7f36645"
     },
     {
       "file": "r2_qa/qa_overlay.html",
@@ -131,49 +131,49 @@
     },
     {
       "file": "rework/annotations-v2.xml",
-      "lines": 438,
-      "sha256": "5ae6554f2a005c2d521309dcdda4f94243b4bd2b07123250620638c49527c354"
+      "lines": 455,
+      "sha256": "fa15d3ec04e86ec04651ba580dc5d3887dd16d204f332abda5cfd2511c26a1f9"
     },
     {
       "file": "rework/lock2.txt",
       "lines": 9,
-      "sha256": "fb90aa67364f92257eb87c08413ec46c0f6b278ae2178cbfa78991b206537ebf",
-      "locked_at": "2026-09-28T18:00:22+07:00"
+      "sha256": "76fb6459f153401b6c0812afa5407c6085e7500d7cc94d713a0a2c6b0267e11f",
+      "locked_at": "2026-09-28T21:31:46+07:00"
     },
     {
       "file": "rework/delta.md",
-      "lines": 21,
-      "sha256": "eb4571f2bcd2d6aad5202feb13880137794452bc67998bb3c182a47da48d6420"
+      "lines": 42,
+      "sha256": "c85feceff6967348b53ae0e221d465743bd47f7a86105e31604cd149431e2498"
     },
     {
       "file": "findings.csv",
-      "lines": 46,
-      "sha256": "4833a28a9ed3a4a633aac5f36c62d36a506f20d65e05ad98195f64cf13a987c0"
+      "lines": 53,
+      "sha256": "8a346b6daafaf4a76bb8b789d0476e1b99172a369a1e102aad4c4ee6b648acb6"
     },
     {
       "file": "10_error_card.md",
       "lines": 59,
-      "sha256": "f8cf5a913964f46476ab4ae2a2f67ed568a54415854b7f4552277dda5113ae52"
+      "sha256": "8e3453280ca103e3c6f2bafcc9183858b8faccbb06f38212fb7f48337f9c3ea2"
     },
     {
       "file": "20_guideline_patch.md",
-      "lines": 26,
-      "sha256": "759cfe5902276f9792a25860767af8ffe664261ff7d1f985a4c9981b8a784fb9"
+      "lines": 31,
+      "sha256": "9efcb1ccff3f02cc0f7a14c5736851dd76d6004f8a123f23430942859f6fb68e"
     },
     {
       "file": "30_escalation_ticket.md",
       "lines": 45,
-      "sha256": "823cafa7de6902a6dc9e50802a2c22201128bdbfde029661d999b3a24ce259b2"
+      "sha256": "71e98e3c770124eb267cf42862ff5efddc2db1770de5cad85238e6a8678b86e5"
     },
     {
       "file": "40_decision_log.csv",
-      "lines": 11,
-      "sha256": "94253c9d231f865df8e2ff17c3012d7de7b9cd070e8d66773aba5c557893c239"
+      "lines": 12,
+      "sha256": "ab7e3b17bc75a38c9a12d11d438622a686c083893bd425b831dbb0fdad777c73"
     },
     {
       "file": "45_review_plan.md",
       "lines": 26,
-      "sha256": "fffc129bf96ee325593291bdffa6bed809170e5e52d93298956bdcf58f393a1e"
+      "sha256": "79dd21a5ac4ff6078c9932100888f1ad1ed38cbd131fa7cf5d070781b51b4cf1"
     },
     {
       "file": "45_sampling_plan.csv",
@@ -183,12 +183,12 @@
     {
       "file": "46_gold_set_plan.md",
       "lines": 48,
-      "sha256": "e03a6cf1f172dcb0d03cd7dec59270f118ec13a206338043af8f6ce844f5c9c8"
+      "sha256": "5690b5502a8f86229ded701adafcc94b1deed275edf430ee42bd13f1cf87a884"
     },
     {
       "file": "50_exit_ticket.md",
-      "lines": 44,
-      "sha256": "278bcf7bb2d6bc4f7254bf5ffb22a77bb4a6eecabc813d9bd30ab4af5603189b"
+      "lines": 45,
+      "sha256": "da07a4b47ad49b08d8ce8557a883df5e9c81d2231b042936f45a0cedae385be6"
     }
   ],
   "failed_gates": []

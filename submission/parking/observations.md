@@ -9,7 +9,7 @@
   tiền cảnh (đáy ảnh, ví dụ đoạn từ (402, 652) tới (525, 720)) cũng không vẽ trong bài này vì chúng bị khung ảnh cắt,
   không thấy vạch đầu ô tương ứng để chắc chúng chia ô nào.
 - Polygon `free_space` dừng ở đâu; có phần bị che nào không: polygon phủ lối xe chạy trống giữa hàng ô giữa ảnh và
-  hàng ô tiền cảnh, cạnh trên dừng ngay dưới đầu mút các vạch chia ô (từ y ≈ 581 ở mép trái lên y ≈ 512 ở mép phải, nơi
+  hàng ô tiền cảnh, cạnh trên dừng ngay dưới đầu mút các vạch chia ô (từ y ≈ 581 ở mép trái lên y ≈ 521 ở mép phải, nơi
   dãy ô kết thúc), cạnh dưới là đường thẳng từ (0, 680) tới (956, 589), dừng trước đầu các vạch tiền cảnh; hai bên
   dừng ở mép khung ảnh. Không có xe hay vật che trong vùng này; xe đỏ ở xa
   (≈ 205, 467) nằm ngoài polygon.

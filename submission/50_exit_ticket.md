@@ -40,5 +40,6 @@
    trong decision log (D7), kèm `screenshots/03_295948_pickup_truck_vs_car.png` và Ticket 2. Nếu làm lại, điều mình đổi
    là cách soát **cụm che khuất dày** chứ không phải ca này: ở `adasind_271039.jpg` mình bỏ sót người áo vàng (`R10`)
    vì nhìn cả cụm ở độ phóng 3x và coi áo vàng là mui xe ba bánh. Lần sau mình sẽ đếm từng người trong cụm ở crop ≥6x
-   và đối chiếu số đầu/số cặp chân trước khi khoá, và dùng `unreadable` ngay khi class chỉ đoán được từ hình dạng mờ
-   (như `L8` ở 270517) thay vì chọn một class.
+   và đối chiếu số đầu/số cặp chân trước khi khoá, và với mỗi người ở sát xe hai bánh thì ghi rõ trên ảnh là đang ngồi trên yên hay chân chạm đất trước khi chọn
+   `Bike` hay `Pedestrian` + `Bike` — ở C0 (người áo đỏ dắt xe máy) và 295948 (người khăn caro) mình chỉ tách đúng ở vòng
+   rework, khi đã xem reference.

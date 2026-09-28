@@ -37,3 +37,9 @@ Bản nháp đầu (`exports/r1-draft.zip`, export theo **job**) báo `Tên task
 9. **Tên task và định dạng.** Task `Day11 · ADASIND · B4-center · raw_fisheye`; export **CVAT for images 1.1**, không kèm ảnh.
 
 K12: 4 polygon viền thấy được (SAM 2 đề xuất từ box, soát lại bằng mắt) nhóm `group_id` với box cùng class. Polygon xe ba bánh 270517 đã sửa tay để bao cả phần thân xe nằm dưới ô làm mờ riêng tư (SAM cắt lõm quanh ô blur) — fill ratio center tăng 0.705 → 0.780. Với n=1 center và n=3 edge, chênh lệch fill ratio chỉ minh hoạ, không kết luận.
+
+## Ghi chú sau khi khoá
+
+Self-QC này mô tả bản `r1_craft` đã khoá trước khi mở reference (`34BC-63D5`), không sửa lại. Vòng rework đã
+đổi một số quyết định ở mục 4 (Rider): người khăn caro và người áo xanh ngọc ở 295948 được tách `Pedestrian` + `Bike`.
+Các thay đổi này nằm ở bản rework `FA15-D3EC`, không ở file khoá này (decision log D8).

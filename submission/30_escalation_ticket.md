@@ -12,8 +12,8 @@ mình không có thẩm quyền tự sửa reference. Mỗi ca có dòng `action
   reference; đường cyan là `ego_body` của mình chỉ bao người lái áo caro ở góc trái dưới)
 - **Hiện tượng:** reference vẽ `ignore_region reason=ego_body` là một hình chữ nhật [x 0–229, y 915–1736]. Thân/người
   lái ego thực tế chỉ ở góc trái dưới (x 0–225, y ≈1200–1700). Chữ nhật này che thêm xe ba bánh [52,922,113,981],
-  người áo vàng [110,920,141,992], người che ô [155,936,191,1021] và xe đạp chở thùng hàng [0,894,138,1210].
-- **Expected impact:** theo R09 các box nằm ≥50% trong ignore thành don't-care, nên 4 box của mình (L1, L2, L3, L7) và
+  người áo vàng [110,920,141,992], người che ô [155,936,191,1021] và xe đạp chở thùng hàng cùng người áo xanh ngọc ([0,894,138,1210] trong `r1_craft`; tách thành `Bike` [0,937,138,1210] + `Pedestrian` [0,895,62,1001] trong bản rework).
+- **Expected impact:** theo R09 các box nằm ≥50% trong ignore thành don't-care, nên 4 box của mình trong `r1_craft` (L1, L2, L3, L7; 5 box trong bản rework) và
   6 box của model bị loại khỏi phép so ở frame này; compare báo 4 `IGNORE_SCOPE` thay vì matched/missing thật. Mọi
   thống kê zone `mid`/`center` và local-quality của 295948 vì thế không phản ánh chất lượng nhãn. Nếu reference này
   được dùng làm mẫu cho gold set, người gán sau sẽ học rằng có thể dùng `ego_body` để "xoá" vật khó ở rìa ảnh — đúng
