@@ -37,62 +37,62 @@ mỗi người một slice và một hồ sơ, rồi QA chéo theo vòng.
 
 ## 3. Bàn giao theo pha
 
-Các mốc dưới đây ghi theo hồ sơ B4-center của Duy. Mốc nào có trao đổi chéo thì ghi thêm luồng giữa các thành viên.
+Các mốc dưới đây ghi theo hồ sơ B2-mid của Tùng. Mốc nào có trao đổi chéo thì ghi thêm luồng giữa các thành viên.
 
 | Mốc | Người giao → nhận | File / commit / mã khóa | Người nhận đã kiểm gì? | Trạng thái / vướng mắc |
 |---|---|---|---|---|
-| P0 · Chốt môi trường và vai | Duy → Tùng, Thế Anh | `c2ae9e7` trên `main`: `mode.json`, `team.json`, `doctor.txt` | Cả ba chạy `mode` với cùng danh sách `anh duy tung`. `assignments` và `qa_reviews` trong mode.json/team.json của ba branch trùng nhau | Xong |
-| P2 · Khóa bản đầu | Duy → Thế Anh (QA) | `submission/r1_craft/` tại `5c12a03`, mã `34BC-63D5`, sha256 `34bc63d5…63f768b` | Thế Anh so sha256 và mã với `lock.txt`, lưu nguyên bản vào `source_duy/annotations.xml` (29 box, 12 polygon) | Xong. Thế Anh nhận file muộn (review lúc 21:44), sau khi Duy đã cold review (D3) |
-| P2 · Khóa bản đầu (bài Tùng) | Tùng → Duy (QA) | Branch `hoang-cong-tung-2a202602229`, `c86eea2`, mã `24F8-C550` | Duy kiểm `git show …:r1_craft/annotations.xml` ra sha256 `24f8c550…621354`, khớp `lock.txt` | Xong |
-| P3 · Chốt QA mù | Thế Anh → Duy | `bcdd5ac`: QA-DUY-01…04, ảnh `screenshots/duy-*.png` | Duy đối chiếu với cold review của mình: QA-DUY-04 trùng nhận xét 295948 L4 | Xong. Nhận xét được ghi trong hồ sơ của Thế Anh |
-| P3 · Chốt QA mù (bài Tùng) | Duy → Tùng | `submission/r2_qa/peer_B2-mid/` (đang thực hiện) | Tùng phản hồi sau khi nhận file | Đang thực hiện |
-| P3 · Chốt QA mù (bài Thế Anh) | Tùng → Thế Anh | `3d42c40` trên branch Tùng: `r2_qa/qa_review.md`, mã khoá `E4B2-125A` | Rework của Thế Anh sửa cùng các ca (062370 L4 đổi Car, REC-02; 069450 L6 bỏ box, REC-03; Car dưới 40 px ở 117120 loại khỏi bản sửa) | Xong |
-| P4 · Quyết định sửa | Duy (vai C) → chính Duy (vai A) | `c062c84`, `findings.csv` round `r3_diag`, decision log D4–D8 | Mỗi khác biệt với reference đều có WHAT/WHY/owner. Hai ca reference sai được escalate (D6, D7) chứ không sửa nhãn theo reference | Xong |
-| P5 · Kiểm bản sửa | Duy → Thế Anh → Duy | `rework/annotations-v2.xml`, `lock2.txt` mã `FA15-D3EC`, [delta.md](submission/rework/delta.md), commit `79fdaac` | Thế Anh đối chiếu bản rework với từng QA-DUY: 04 đã đổi (tách Pedestrian + Bike); 01–03 có bước xử lý tiếp theo ở mục 4 | Đang hoàn thiện, xem mục 4 |
-| P6 · Chốt nộp | Duy (A, B) → Duy (C) | [manifest.json](submission/manifest.json), commit chốt | `lab11.py check` exit 0 ("Hồ sơ hình thức đầy đủ"); manifest.json đã commit tại `f906bcb` có `failed_gates: []` | Chạy lại check sau khi bổ sung peer QA B2-mid |
+| P0 · Chốt môi trường và vai | (chung) Duy → Tùng, Thế Anh | `c2ae9e7` trên `main`: `mode.json`, `team.json`, `doctor.txt` | Cả ba chạy `mode` với cùng danh sách `anh duy tung`. `assignments` và `qa_reviews` trong mode.json/team.json của ba branch trùng nhau | Xong |
+| P2 · Khóa bản đầu (slice B2-mid) | Tùng tự khoá | `c86eea2`: `submission/r1_craft/`, mã `24F8-C550` | Tự đối chiếu đủ 9 mục checklist self-QC trước khi khoá ([selfqc.md](submission/r1_craft/selfqc.md)) | Xong |
+| P2 · Khóa bản đầu (bài Tùng) → Duy (QA) | Tùng → Duy | Branch `hoang-cong-tung-2a202602229`, `c86eea2`, mã `24F8-C550` | Duy kiểm `git show …:r1_craft/annotations.xml` ra sha256 `24f8c550…621354`, khớp `lock.txt` | Xong (Duy tự xác nhận phía hồ sơ của Duy) |
+| P3 · Chốt QA mù (Tùng soát Thế Anh) | Tùng → Thế Anh | `3d42c40`: `r2_qa/qa_review.md`, mã khoá đã soát `E4B2-125A` | 4 nhận xét theo rule (062370 L4 R04; 069450 L6, 117120 L3, 117120 L6 R01). Thế Anh đã rework đúng cả 4 điểm, khoá `823C-842B` | Xong |
+| P3 · Chốt QA mù (bài Tùng) | Duy → Tùng | `submission/r2_qa/peer_B2-mid/` | Chưa có trên branch Duy tính đến lúc kiểm tra gần nhất | **Đang chờ Duy thực hiện** |
+| P4 · Quyết định sửa | Tùng (vai C) → chính Tùng (vai A) | `3d42c40`, `findings.csv` round `r3_diag`, 46 dòng điền đủ why/severity/owner/action | Mỗi khác biệt với reference/model đều có WHAT/WHY/owner. 1 cụm bỏ sót được escalate vì luật chưa rõ (D02); 1 ca reference sai giữ nguyên nhãn của mình, không sửa theo reference (D04) | Xong |
+| P5 · Kiểm bản sửa | Tùng tự rework, tự đối chiếu delta | `rework/annotations-v2.xml`, `lock2.txt` mã `CF64-2680` (relock từ `6D7B-BC3A`), [delta.md](submission/rework/delta.md) | Missing giảm từ 6 ca về 1 ca (zone center 3→0, mid 3→0); bản đầu tiên (`6D7B-BC3A`) chỉ sửa đúng 2/6 và làm lệch 1 class, đã ghi lý do relock ở D01 | Xong |
+| P6 · Chốt nộp | Tùng (A, B, C) | [manifest.json](submission/manifest.json), commit `3d42c40` | `lab11.py check` exit 0 ("Hồ sơ hình thức đầy đủ"); `manifest.json` có `failed_gates: []` | Xong |
 
 ## 4. Bất đồng và phối hợp
 
-- **Một ca đã phân xử:** 295948 L4, R03. Người quấn khăn caro sát camera có phải rider (một `Bike`) không.
-  Duy (cold review) và Thế Anh (QA-DUY-04) cùng nêu ca này, còn teaching reference gán một `Bike`. Duy soi crop thấy
-  bàn chân chạm đất cạnh bánh xe và không thấy khung nối với xe ego. Vì vậy Duy quyết định tách thành `Pedestrian`
-  truncated và `Bike`, rồi đưa vào rework `FA15-D3EC`
-  ([decision log](submission/40_decision_log.csv) D4, D8; [delta.md](submission/rework/delta.md) E2). Luật chưa nói về
-  người đang dừng xe và đứng dạng chân, nên Duy đề xuất bổ sung ở [20_guideline_patch.md](submission/20_guideline_patch.md).
-  Thế Anh ghi nhận thay đổi và lưu ý vùng xe bị che, blur; ghi chú này được giữ lại để người duyệt guideline tham khảo.
+- **Một ca đã phân xử:** `adasind_102750.jpg`, vật ở vị trí reference gọi là `R4` (`ThreeWheeler`; gợi ý K12 của
+  công cụ cũng ghi cùng toạ độ (133,918)). Sau khi zoom kỹ trên ảnh gốc trong CVAT, Tùng xác nhận đây là một chiếc
+  `Truck` (có thùng chở hàng, không phải xe ba bánh) và giữ nguyên nhãn của mình thay vì đổi theo reference/gợi ý
+  K12 — ghi `why=E0_reference_defect`, `action=keep_with_reason` vào `findings.csv` (`round=rework`,
+  `object_ref=L1+R4`), kèm [decision log](submission/40_decision_log.csv) D04 và ảnh chụp màn hình
+  `screenshots/02_102750_truck_vs_threewheeler.png`. Luật R04 hiện chỉ mô tả chung, chưa có tiêu chí phân biệt xe
+  ba bánh với xe tải nhỏ khi nhìn xa trên ảnh fisheye.
 - **Việc tiếp theo:**
-  - QA-DUY-01 (270517 group 2, R05): box ghi `truncated=true` nhưng polygon cùng group ghi false.
-    Người theo dõi: Duy. Phép kiểm tiếp theo: đồng bộ attribute polygon, relock rồi chạy `rework`.
-  - QA-DUY-02 (271039 L1, R05): attribute `occluded=true` nhưng trường XML chuẩn `occluded=0`. Người theo dõi: Duy.
-    Phép kiểm tiếp theo: import/export lại trên CVAT để đồng bộ hai trường.
-  - QA-DUY-03 (271039 L12+L13, R02): hai người chồng box. Người theo dõi: Duy. Cần ghi rõ phần nhìn thấy của từng người.
-  - Peer QA duy → tung cho B2-mid: soát bản khoá `24F8-C550` (trước reference), ghi `r2_qa,B2-mid` vào findings.csv,
-    commit; sau đó Tùng phản hồi. Người theo dõi: Duy.
-  - QA tung → anh cho B2-dense: xong (`3d42c40`); rework `823C-842B` của Thế Anh đã xử lý các ca này.
-  - Ticket 1 và 2 gửi người giữ reference (D6, D7, [30_escalation_ticket.md](submission/30_escalation_ticket.md)):
-    đã escalate, đang chờ người giữ reference phản hồi.
-- **Đóng góp của A/B/C vào kế hoạch và exit ticket:** mỗi thành viên tự viết error card, guideline patch, escalation,
-  review/sampling/gold plan và exit ticket cho slice của mình. Duy làm các file này cho B4-center (`8237106`). Thế Anh
-  làm cho B2-dense (`24e2cd6`). Tùng làm cho B2-mid (sampling/gold plan ở `c86eea2`; error card, guideline patch, escalation,
-  review plan, exit ticket ở `3d42c40`). Mỗi slice có bộ kế hoạch riêng.
-- **Thay đổi phân công nếu có:** không đổi người hay vai. Chỉ có thứ tự ở P3 thay đổi: Duy chờ quá 5 phút mà chưa nhận
-  được file nên cold review bài mình trước (D3). Sau đó Duy làm peer QA cho Tùng theo đúng vòng team.json (xem mục 4). Thế Anh soát bài Duy muộn hơn, ở commit `bcdd5ac`, dựa trên các bản export
-  Duy đã khoá tại `79fdaac`.
+  - Peer QA Duy → Tùng cho slice B2-mid: soát bản khoá `24F8-C550` (trước reference), ghi vào
+    `submission/r2_qa/peer_B2-mid/` và các dòng `r2_qa,B2-mid` trong findings.csv. Người theo dõi: Duy. Tùng sẽ
+    phản hồi sau khi nhận được.
+  - Ticket 1 gửi guideline team (D02, [30_escalation_ticket.md](submission/30_escalation_ticket.md)): cụm 5
+    vật sát nhau ở `adasind_060000.jpg` — luật chưa nói rõ khi nào tách box riêng, khi nào gộp
+    `ignore_region crowd_or_group`. Đã escalate, đang chờ phản hồi.
+  - 2 box giữ bất đồng với reference chưa có người soát thứ hai xác nhận (D03): `adasind_086220.jpg` L6 (xe máy)
+    và `adasind_102750.jpg` L2 (xích lô) — cả hai không có model/reference đồng thuận, chỉ dựa trên quan sát của
+    Tùng.
+  - QA Tùng → Anh cho B2-dense: xong (`3d42c40`); rework `823C-842B` của Thế Anh đã xử lý đúng cả 4 điểm nêu ra.
+- **Đóng góp của A/B/C vào kế hoạch và exit ticket:** mỗi thành viên tự viết error card, guideline patch,
+  escalation, review/sampling/gold plan và exit ticket cho slice của mình. Tùng làm các file này cho B2-mid
+  (sampling/gold plan ở `c86eea2`; error card, guideline patch, escalation ticket, review plan, exit ticket ở
+  `3d42c40`). Duy làm cho B4-center (`8237106`). Thế Anh làm cho B2-dense (`24e2cd6`). Mỗi slice có bộ kế hoạch
+  riêng.
+- **Thay đổi phân công nếu có:** không đổi người hay vai. Ở P5, bản rework đầu tiên của Tùng (mã `6D7B-BC3A`)
+  chỉ sửa đúng 2/6 ca và vô tình đổi nhầm 1 box `ThreeWheeler` thành `Car`. Tùng ghi rõ lý do vào decision log
+  (D01) rồi khoá lại đúng (`--relock`, mã `CF64-2680`) thay vì âm thầm sửa hay bỏ qua sai sót.
 
 ## 5. Xác nhận trước khi nộp
 
-- [x] A xác nhận nhãn và export đúng phiên bản: Vũ Minh Duy. sha256 của `r1_craft/annotations.xml` và
-  `rework/annotations-v2.xml` tại HEAD khớp `lock.txt` (`34BC-63D5`) và `lock2.txt` (`FA15-D3EC`). Thế Anh cũng đã
-  kiểm lại độc lập hai mã này trong `provenance.json`.
-- [x] B xác nhận đã QA độc lập trước reference và kiểm lại ca sửa: Nguyễn Lê Thế Anh (`bcdd5ac`,
-  `reviewed_reference_or_model: false`, kiểm lại rework FA15-D3EC).
-- [ ] C xác nhận báo cáo đúng bản khóa, các file đầy đủ và check exit 0: Vũ Minh Duy. `check` đã exit 0 nhưng cần chạy lại
-  sau khi bổ sung peer QA B2-mid.
-- [x] manifest.json tại commit chốt có failed_gates rỗng. Tại `f906bcb` là `failed_gates: []` (đã kiểm lại tại
-  `af24852`, bản mới nhất trên nhánh Duy, vẫn `failed_gates: []`).
+- [x] A xác nhận nhãn và export đúng phiên bản: Hoàng Công Tùng. sha256 của `r1_craft/annotations.xml` và
+  `rework/annotations-v2.xml` tại HEAD khớp `lock.txt` (`24F8-C550`) và `lock2.txt` (`CF64-2680`).
+- [ ] B xác nhận đã QA độc lập trước reference và kiểm lại ca sửa: chưa có — Duy (người được phân công soát bài
+  Tùng theo `team.json`) chưa thực hiện peer QA cho slice B2-mid (xem mục 3, mốc P3 "bài Tùng").
+- [x] C xác nhận báo cáo đúng bản khóa, các file đầy đủ và check exit 0: Hoàng Công Tùng. `python3 lab11.py check`
+  chạy tại commit `3d42c40` → "Hồ sơ hình thức đầy đủ" (exit 0).
+- [x] manifest.json tại commit chốt có failed_gates rỗng. `submission/manifest.json` trên nhánh này có
+  `failed_gates: []`.
 - [x] Repo nhóm Public, ảnh và các bằng chứng mở được. Đã xác nhận qua GitHub API (`"private": false`) và mở thử
   các ảnh/screenshot trong repo, đều xem được.
-- [ ] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố. Chưa xác minh được — "đã push" thì đúng
-  (nhiều commit đã lên GitHub), nhưng việc gửi link qua kênh lớp là hành động ngoài repo, chỉ Duy tự xác nhận được.
+- [ ] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố. "Đã push" thì đúng (nhiều commit đã lên
+  GitHub, nhánh `hoang-cong-tung-2a202602229`), nhưng việc gửi link qua Discord (`lab_day11`) là hành động ngoài
+  repo — Tùng tự tích khi đã thực sự gửi.
 
 Chỉ đánh dấu việc đã kiểm thật. Nhóm nộp một hồ sơ chung; check không tự chấm đóng góp từng người. Giữ nguyên header/các cột enum của findings.csv; tên người được ghi trong tài liệu này hoặc phần note thích hợp.
