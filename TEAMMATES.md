@@ -7,13 +7,14 @@
 - Repo Public: https://github.com/AGeneration/K4-DAY11-Claude-Pro
 - Máy giữ hồ sơ chính / người quản lý: mỗi thành viên giữ hồ sơ của mình trên branch riêng
   (`vu-minh-duy-2a202602198`, `hoang-cong-tung-2a202602229`, `NguyenLeTheAnh-2A202602164`). Người giữ hồ sơ này:
-  Vũ Minh Duy. Commit chia task và setup chung: `c2ae9e7` trên `main`.
+  Hoàng Công Tùng. Commit chia task và setup chung: `c2ae9e7` trên `main`.
 - Slice chung lấy từ mode.json: nhóm không dùng slice chung. `mode --members anh duy tung` chia mỗi người một slice:
-  anh → `B2-dense`, duy → `B4-center`, tung → `B2-mid`. Hồ sơ này là slice `B4-center`.
-- Tên định danh vai A dùng cho --self: `duy` (hồ sơ này); hai bạn còn lại dùng `tung` và `anh`.
-- Kênh trao đổi nội bộ: [Điền]
-- Đại diện nộp (vai C): Vũ Minh Duy, 2A202602198 (cho hồ sơ này; Tùng và Thế Anh nộp branch của mình)
-- Commit chốt bài: [SHA sau khi làm lại peer QA B2-mid; HEAD hiện tại `f906bcb` + commit cập nhật file này]
+  anh → `B2-dense`, duy → `B4-center`, tung → `B2-mid`. Hồ sơ này là slice `B2-mid`.
+- Tên định danh vai A dùng cho --self: `tung` (hồ sơ này); hai bạn còn lại dùng `duy` và `anh`.
+- Kênh trao đổi nội bộ: Discord, kênh `lab_day11`
+- Đại diện nộp (vai C): Hoàng Công Tùng, 2A202602229 (cho hồ sơ này; Duy và Thế Anh nộp branch của mình)
+- Commit chốt bài: `3d42c40` (hoàn thành P3–P6, `python3 lab11.py check` exit 0 — "Hồ sơ hình thức đầy đủ"); HEAD
+  hiện tại `7731d43` gồm thêm các commit cập nhật `TEAMMATES.md`, không ảnh hưởng kết quả `check`
 
 ## 2. Ba vai chính
 
