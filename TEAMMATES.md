@@ -34,7 +34,7 @@ Nhóm làm theo vòng quay trong `docs/03-roles-rotation-vi.md`: **mỗi ngườ
 | Vai | Vũ Minh Duy (`B4-center`) | Hoàng Công Tùng (`B2-mid`) | Nguyễn Lê Thế Anh (`B2-dense`) |
 |---|---|---|---|
 | A · Gán nhãn | P0 `3681d0b`; C0 `bf1a4d2` (mã `A744-7D43`); khoá R1 `5c12a03` (`34BC-63D5`); rework `79fdaac` (`FA15-D3EC`) | C0 `ACE4-486E`, khoá R1 `c86eea2` (`24F8-C550`); rework `3d42c40` (`CF64-2680`, relock từ `6D7B-BC3A`) | Khoá R1 `E4B2-125A`; rework qua vòng import/export CVAT (`823C-842B`, `cvat_roundtrip.json`) — `24e2cd6`, `fad2e60`, `0182dad` |
-| B · QA độc lập | Cold review bản của mình (D3); QA chéo slice B2-mid của Tùng | Soát bản khoá B2-dense `E4B2-125A` của Thế Anh (`3d42c40`, 4 nhận xét) | Soát bản khoá B4-center của Duy (`bcdd5ac`, QA-DUY-01…04, đối chiếu rework `FA15-D3EC`) |
+| B · QA độc lập | Cold review bản của mình (D3); QA chéo slice B2-mid của Tùng: `ff9fa5b`, bản khoá `24F8-C550`, 7 nhận xét QA-TUNG-01…07 và đối chiếu rework `CF64-2680` (`submission/r2_qa/peer_B2-mid/`) | Soát bản khoá B2-dense `E4B2-125A` của Thế Anh (`3d42c40`, 4 nhận xét) | Soát bản khoá B4-center của Duy (`bcdd5ac`, QA-DUY-01…04, đối chiếu rework `FA15-D3EC`) |
 | C · Chẩn đoán & điều phối | P4 `c062c84` (zone table, local quality, model); P6 `8237106` (error card, guideline patch, escalation, review/sampling/gold plan, exit ticket); decision log D1–D12 | `findings.csv` round `r3_diag`, decision log D01–D04; error card, guideline patch, escalation, review/sampling/gold plan, exit ticket (`c86eea2`, `3d42c40`) | 48 findings, 10 ảnh bằng chứng, error card, 5 ticket, sampling 8 ô / 200 frame, gold plan 4 camera, exit ticket |
 
 Chi tiết bàn giao theo pha, các ca bất đồng đã phân xử và phần xác nhận trước khi nộp của từng người nằm trong
@@ -45,5 +45,7 @@ TEAMMATES.md riêng trên branch của người đó.
 - [x] Cả ba thành viên đã hoàn thành đầy đủ yêu cầu trên slice của mình.
 - [x] Mỗi hồ sơ có `lab11.py check` exit 0 và `manifest.json` với `failed_gates: []`.
 - [x] Nhãn đã khoá (R1 và rework) có sha256 khớp `lock.txt` / `lock2.txt` trên từng branch.
+- [x] Đủ vòng QA chéo theo `team.json`: Thế Anh → Duy (`bcdd5ac`), Duy → Tùng (`ff9fa5b`), Tùng → Thế Anh (`3d42c40`);
+  cả ba đều soát bản khoá trước khi xem reference.
 - [x] Repo nhóm Public; ảnh và bằng chứng mở được.
 - [x] Phần làm của mỗi cá nhân nằm trên branch của họ; `main` chỉ là bản tổng hợp.

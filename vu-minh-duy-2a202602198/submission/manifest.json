@@ -147,8 +147,8 @@
     },
     {
       "file": "findings.csv",
-      "lines": 53,
-      "sha256": "8a346b6daafaf4a76bb8b789d0476e1b99172a369a1e102aad4c4ee6b648acb6"
+      "lines": 60,
+      "sha256": "592a658345703636716f7f2e608630a4546a4a1814b847e509569d6f59175173"
     },
     {
       "file": "10_error_card.md",
