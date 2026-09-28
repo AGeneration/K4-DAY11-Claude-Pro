@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <annotations>
   <version>1.1</version>
   <meta>
@@ -7,13 +7,13 @@
       <size>3</size>
       <mode>annotation</mode>
       <overlap>0</overlap>
-      <bugtracker />
+      <bugtracker></bugtracker>
       <created>2026-09-28 12:16:08.381546+00:00</created>
-      <updated>2026-09-28 12:20:09.669816+00:00</updated>
+      <updated>2026-09-28 14:59:42.509713+00:00</updated>
       <subset>default</subset>
       <start_frame>0</start_frame>
       <stop_frame>2</stop_frame>
-      <frame_filter />
+      <frame_filter></frame_filter>
       <segments>
         <segment>
           <id>30</id>
@@ -26,7 +26,7 @@
         <username>admintheanh</username>
         <email>theanhh2701@gmail.com</email>
       </owner>
-      <assignee />
+      <assignee></assignee>
       <labels>
         <label>
           <name>Bus</name>
@@ -234,7 +234,7 @@ privacy_or_policy</values>
         </label>
       </labels>
     </job>
-    <dumped>2026-09-28 12:20:17.731677+00:00</dumped>
+    <dumped>2026-09-28 15:00:20.215862+00:00</dumped>
   </meta>
   <image id="0" name="adasind_062370.jpg" width="1080" height="1920">
     <box label="ThreeWheeler" source="file" occluded="0" xtl="3.00" ytl="704.00" xbr="149.00" ybr="981.00" z_order="0">
@@ -281,7 +281,7 @@ privacy_or_policy</values>
     <polygon label="ignore_region" source="file" occluded="0" points="1080.00,910.60;1080.00,1920.00;0.00,1920.00;0.00,910.60;0.00,910.60;0.00,982.36;0.00,1053.56;0.00,1123.69;0.00,1192.19;0.00,1258.54;0.00,1322.25;0.00,1382.83;0.00,1439.81;0.00,1492.76;0.00,1541.28;0.00,1585.01;29.65,1623.60;93.36,1656.76;159.71,1684.25;228.21,1705.85;298.34,1721.39;369.54,1730.77;441.30,1733.90;513.06,1730.77;584.26,1721.39;654.39,1705.85;722.89,1684.25;789.24,1656.76;852.95,1623.60;913.53,1585.01;970.51,1541.28;1023.46,1492.76;1071.98,1439.81;1080.00,1382.83;1080.00,1322.25;1080.00,1258.54;1080.00,1192.19;1080.00,1123.69;1080.00,1053.56;1080.00,982.36;1080.00,910.60" z_order="0">
       <attribute name="reason">lens_border</attribute>
     </polygon>
-    <box label="Truck" source="manual" occluded="1" xtl="316.00" ytl="740.00" xbr="418.00" ybr="818.00" z_order="0">
+    <box label="Truck" source="file" occluded="1" xtl="316.00" ytl="740.00" xbr="418.00" ybr="818.00" z_order="0">
       <attribute name="occluded">true</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
@@ -330,45 +330,45 @@ privacy_or_policy</values>
     <polygon label="ignore_region" source="file" occluded="0" points="1080.00,990.50;1080.00,1920.00;0.00,1920.00;0.00,990.50;0.00,990.50;0.00,1062.96;0.00,1134.87;0.00,1205.68;0.00,1274.86;0.00,1341.86;0.00,1406.20;0.00,1467.37;0.00,1524.91;6.81,1578.39;60.29,1627.39;117.83,1671.54;179.00,1710.51;243.34,1744.00;310.34,1771.76;379.52,1793.57;450.33,1809.27;522.24,1818.74;594.70,1821.90;667.16,1818.74;739.07,1809.27;809.88,1793.57;879.06,1771.76;946.06,1744.00;1010.40,1710.51;1071.57,1671.54;1080.00,1627.39;1080.00,1578.39;1080.00,1524.91;1080.00,1467.37;1080.00,1406.20;1080.00,1341.86;1080.00,1274.86;1080.00,1205.68;1080.00,1134.87;1080.00,1062.96;1080.00,990.50" z_order="0">
       <attribute name="reason">lens_border</attribute>
     </polygon>
-    <polygon label="ignore_region" source="manual" occluded="0" points="2.21,1049.22;31.64,1061.21;61.43,1076.11;80.69,1099.00;91.95,1124.43;116.30,1130.25;152.27,1146.23;157.72,1160.40;147.91,1184.38;160.26,1196.01;170.80,1177.84;192.23,1174.57;216.94,1174.57;236.93,1178.57;253.28,1188.02;267.81,1197.83;289.97,1218.54;274.90,1231.47;270.90,1246.01;268.72,1262.36;275.62,1283.07;286.89,1303.78;290.16,1324.85;285.80,1344.11;281.44,1382.62;262.18,1422.96;265.34,1455.80;270.03,1501.04;280.06,1556.74;290.37,1606.95;295.50,1629.73;314.50,1643.29;332.12,1670.43;325.36,1703.02;303.35,1723.11;287.61,1732.34;179.59,1674.79;80.54,1603.14;32.76,1545.33;0.21,1519.82" z_order="0">
+    <polygon label="ignore_region" source="file" occluded="0" points="2.21,1049.22;31.64,1061.21;61.43,1076.11;80.69,1099.00;91.95,1124.43;116.30,1130.25;152.27,1146.23;157.72,1160.40;147.91,1184.38;160.26,1196.01;170.80,1177.84;192.23,1174.57;216.94,1174.57;236.93,1178.57;253.28,1188.02;267.81,1197.83;289.97,1218.54;274.90,1231.47;270.90,1246.01;268.72,1262.36;275.62,1283.07;286.89,1303.78;290.16,1324.85;285.80,1344.11;281.44,1382.62;262.18,1422.96;265.34,1455.80;270.03,1501.04;280.06,1556.74;290.37,1606.95;295.50,1629.73;314.50,1643.29;332.12,1670.43;325.36,1703.02;303.35,1723.11;287.61,1732.34;179.59,1674.79;80.54,1603.14;32.76,1545.33;0.21,1519.82" z_order="0">
       <attribute name="reason">ego_body</attribute>
     </polygon>
-    <box label="Car" source="manual" occluded="0" xtl="188.66" ytl="923.45" xbr="282.60" ybr="997.80" z_order="0">
+    <box label="Car" source="file" occluded="0" xtl="188.66" ytl="923.45" xbr="282.60" ybr="997.80" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="Car" source="manual" occluded="0" xtl="348.00" ytl="918.00" xbr="396.00" ybr="961.00" z_order="0">
+    <box label="Car" source="file" occluded="0" xtl="348.00" ytl="918.00" xbr="396.00" ybr="961.00" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="Car" source="manual" occluded="0" xtl="476.75" ytl="872.87" xbr="637.80" ybr="1000.70" z_order="0">
+    <box label="Car" source="file" occluded="0" xtl="476.75" ytl="872.87" xbr="637.80" ybr="1000.70" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="Bus" source="manual" occluded="0" xtl="420.50" ytl="893.07" xbr="464.50" ybr="942.50" z_order="0">
+    <box label="Bus" source="file" occluded="0" xtl="420.50" ytl="893.07" xbr="464.50" ybr="942.50" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="Bike" source="manual" occluded="0" xtl="87.53" ytl="918.91" xbr="190.65" ybr="1027.38" z_order="0">
+    <box label="Bike" source="file" occluded="0" xtl="87.53" ytl="918.91" xbr="190.65" ybr="1027.38" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="ThreeWheeler" source="manual" occluded="0" xtl="724.75" ytl="869.89" xbr="860.40" ybr="980.77" z_order="0">
+    <box label="ThreeWheeler" source="file" occluded="0" xtl="724.75" ytl="869.89" xbr="860.40" ybr="980.77" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="Pedestrian" source="manual" occluded="0" xtl="689.29" ytl="881.15" xbr="728.13" ybr="975.70" z_order="0">
+    <box label="Pedestrian" source="file" occluded="0" xtl="689.29" ytl="881.15" xbr="728.13" ybr="975.70" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>
     </box>
-    <box label="ThreeWheeler" source="manual" occluded="0" xtl="601.33" ytl="885.63" xbr="691.77" ybr="963.44" z_order="0">
+    <box label="ThreeWheeler" source="file" occluded="0" xtl="601.33" ytl="885.63" xbr="691.77" ybr="963.44" z_order="0">
       <attribute name="occluded">false</attribute>
       <attribute name="truncated">false</attribute>
       <attribute name="edge_zone">false</attribute>

@@ -65,8 +65,8 @@
     },
     {
       "file": "r1_craft/selfqc.md",
-      "lines": 35,
-      "sha256": "d806caa018492e5bb06dfd8d6f335f323e74ae013fd1d5ee6a754bdc14ca5cea"
+      "lines": 37,
+      "sha256": "8769e23ce644274322cc576b328b284fc33cb0e00bd4d843447177b0c8348ed1"
     },
     {
       "file": "r1_craft/reference.txt",
@@ -132,28 +132,28 @@
     {
       "file": "rework/annotations-v2.xml",
       "lines": 377,
-      "sha256": "00bcf291f96afeb8399a367374e0c17fdc66f0b150756f03597f6e4e23a05a54"
+      "sha256": "823c842b5fc87c56bddd58e8d6ea5bda48810f351bb3331328e09b56c8aa4037"
     },
     {
       "file": "rework/lock2.txt",
-      "lines": 19,
-      "sha256": "96718826625d342fa7212ed011f1eeaaa195f864be204a39ec5c8844a2317778",
-      "locked_at": "2026-09-28T21:13:20+07:00"
+      "lines": 29,
+      "sha256": "90eadae11590127b93c4eae5d9b2d5f385979ee4cc05b77ae3e255e360ccef43",
+      "locked_at": "2026-09-28T22:03:08+07:00"
     },
     {
       "file": "rework/delta.md",
-      "lines": 36,
-      "sha256": "73cd8cd8f46f1192800d63bdb6b3f50ecab7b6b81cf9aa6217df37a205fc1937"
+      "lines": 34,
+      "sha256": "07fb2dc9a5c88a329ab72b86839e526057d80738eaba1096216681c42e4e178d"
     },
     {
       "file": "findings.csv",
       "lines": 49,
-      "sha256": "c39b29dc5a9bad0d9c6e3ebf317b3e179b0435562de0cfa01a470fa766e62205"
+      "sha256": "5769d7f14c9b3ebaebd25f9209ffbf699015b73656c43922f87c31bd0e525840"
     },
     {
       "file": "10_error_card.md",
       "lines": 38,
-      "sha256": "0282bff32979d515a04f7a8d891c0ba104819aa0a7ac48575932fcd8ed529161"
+      "sha256": "335495a63ba0e3427dc391d48d142864e6d834f157cf82684c42f5af22b67ee1"
     },
     {
       "file": "20_guideline_patch.md",
@@ -167,8 +167,8 @@
     },
     {
       "file": "40_decision_log.csv",
-      "lines": 23,
-      "sha256": "1369e45390c8ebeaa124e34475e478c9a41c2f91841d4181de4150237c14f43f"
+      "lines": 24,
+      "sha256": "d2e72c227acb5661e1f6b45977fdea5b798598c3a28440c90be980e35cb5b9f0"
     },
     {
       "file": "45_review_plan.md",

@@ -33,3 +33,5 @@
 
 K12: ZIP job30 không có bốn polygon/group_id đối chứng; giữ giảm stretch/k12 đã ghi, **không giảm frame3**. Không đưa polygon trợ lý tạo ở bản cũ vào nhãn người học.
 Bằng chứng: screenshots/03-b2-van.png, 04-b2-scope.png, 07-job30-frame3.png và 00_setup/export_provenance.json. Review do trợ lý hỗ trợ; chưa có chứng nhận QA độc lập.
+
+Cập nhật bàn giao: đã xác minh trực tiếp task47/job30 trên CVAT có tên Day11 · ADASIND · B2-dense · raw_fisheye, đủ ba ảnh. Cảnh báo metadata job thiếu tên task phía trên không còn là việc chưa xác minh. R1 không sửa; rework đã qua vòng import/export CVAT.

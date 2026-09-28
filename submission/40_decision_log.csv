@@ -1,6 +1,6 @@
 id,date,question,decision,rationale,status
 REC-01,2026-09-28,ZIP job29 không đúng B2-dense,Giữ ZIP gốc; bản bàn giao dùng hai ảnh đúng theo giảm frame3,"Không dùng nhãn trợ lý đề xuất cho 117120; lọc đúng node ảnh và ghi hash trong export_provenance.json; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
-REC-02,2026-09-28,Xe van trong 062370 là Truck hay Car,Đã sửa thành Car trong bản rework local,R04 và ảnh xác nhận van chở người; chưa có CVAT roundtrip,proposed
+REC-02,2026-09-28,Xe van trong 062370 là Truck hay Car,Đã sửa thành Car trong bản rework local,R04 và ảnh xác nhận van chở người; chưa có CVAT roundtrip; hoàn tất vòng CVAT theo CVAT-01.,superseded
 REC-03,2026-09-28,Box Car L6 trong 069450 có thuộc phạm vi,Đã bỏ box khỏi rework local,H=24.46 px <40; không làm đổi metric vì matcher vốn lọc box này,proposed
 CAL-01,2026-09-28,C0 L8 và người áo vàng trên xe đạp,Cần QA phân xử rider hay người dắt xe,Vùng blur che chân và L8 chỉ ôm một phần xe; cần đối chiếu R03 trước khi sửa L2 hoặc L8,escalated
 CAL-02,2026-09-28,C0 thiếu ego_body và có box L9 dưới ngưỡng,Ghi lỗi và giữ nguyên export đã khóa,Selfqc báo thiếu ego_body và L9 dưới 40 px; chưa tạo bản sửa C0 để không làm mất dấu lock,pending
@@ -14,10 +14,11 @@ DIAG-02,2026-09-28,Năm xe ba bánh và hai rider khác policy model,Nhờ ai_te
 REWORK-01,2026-09-28,Các ca có căn cứ cần sửa,Tạo bản sửa local và khóa riêng 79DF-6639,"Đổi van; siết Bike; thêm Truck bị che; bỏ box dưới H40; chưa được CVAT export lại; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
 META-01,2026-09-28,Cảnh báo tên task từ export job,Giữ metadata gốc và yêu cầu xác nhận tên trong CVAT,Parser đọc nhầm tên label Bus khi meta/job không có name; chưa chứng minh tên task sai,pending
 JOB30-01,2026-09-28,Nhận export job30 đủ ba ảnh,Khóa lại r1 từ nguyên XML job30; bỏ giảm frame3,Người học đã cung cấp 117120; báo cáo hai ảnh trước đây lưu riêng trong lịch sử local,resolved
-JOB30-02,2026-09-28,Bản sửa local cũ chỉ có hai frame,Tạo lại rework từ r1 job30 đủ ba ảnh và relock,Sửa ca có căn cứ; giữ Bus và ThreeWheeler của 117120 đang escalation; chưa có CVAT roundtrip,proposed
+JOB30-02,2026-09-28,Bản sửa local cũ chỉ có hai frame,Tạo lại rework từ r1 job30 đủ ba ảnh và relock,Sửa ca có căn cứ; giữ Bus và ThreeWheeler của 117120 đang escalation; chưa có CVAT roundtrip; hoàn tất vòng CVAT theo CVAT-01.,superseded
 JOB30-03,2026-09-28,117120 L3/L7 bị báo spurious nhưng có vật thật,Giữ nhãn và nhờ QA phân xử class/reference; AI team kiểm M8/M10,Ảnh 07 cho thấy phương tiện nhỏ và ThreeWheeler bị che; không xóa để tăng precision,escalated
 PEER-01,2026-09-28,Ai review ai,Anh review Duy B4-center theo team.json,Thay cold review B2 bằng dữ liệu Git khóa thật của Duy tại commit 79fdaac; giữ lịch sử cũ,accepted
 PEER-02,2026-09-28,Duy vừa push lại,Dùng commit 79fdaac; giữ nguyên R1 và rework mới,Đã kiểm SHA256 R1 34BC-63D5 và rework FA15-D3EC; QA R1 và đối chiếu rework tách riêng,accepted
 PEER-03,2026-09-28,Các ca peer QA còn mở,Escalate QA-DUY-02/03/04 cho qa và Duy,Bất nhất biểu diễn occluded; hai người chồng nhau; dắt hay ngồi bị che/blur; chưa có phê duyệt,escalated
 PEER-04,2026-09-28,Truncated polygon Bike group 2,Đề nghị Duy đồng bộ với box tại 270517,Biên ảnh cắt xe; rework mới vẫn giữ polygon false và box true; không sửa file khóa của Duy,proposed
-PACK-01,2026-09-28,Yêu cầu tạo bản rework để nộp,Đóng gói XML sửa đã khóa 00BC-F291 thành ZIP import CVAT,Giữ bytes và bản R1; kiểm 3 frame/hash/hình học; tạo overlay và tính lại delta theo findings hiện tại; chưa xác minh export CVAT,proposed
+PACK-01,2026-09-28,Yêu cầu tạo bản rework để nộp,Đóng gói XML sửa đã khóa 00BC-F291 thành ZIP import CVAT,Giữ bytes và bản R1; kiểm 3 frame/hash/hình học; tạo overlay và tính lại delta theo findings hiện tại; chưa xác minh export CVAT; hoàn tất vòng CVAT theo CVAT-01.,superseded
+CVAT-01,2026-09-28,Thay bản rework local bằng export CVAT thật,Relock từ 00BC-F291 sang hash của ZIP CVAT mới,Đã sao lưu job30; import hoàn tất vào task47; export CVAT for images 1.1 mới; xác minh tất cả hình/thuộc tính khớp bản sửa; nhãn lưu trên server,accepted

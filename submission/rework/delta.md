@@ -25,12 +25,10 @@
 - adasind_117120.jpg XML_box2_box3_box6 STRUCTURE: không áp dụng
 - adasind_270517.jpg L3 ATTRIBUTE: không áp dụng
 
-## Giải thích job30
+## Giải thích bản export CVAT cuối
 
-R1 E4B2-125A là nguyên export CVAT job30, đủ ba ảnh. Rework 00BC-F291 là đề xuất sửa tại máy; provenance.json ghi rõ chưa xác minh import/re-export CVAT. Lock chứng minh bytes, không chứng minh đã thao tác trên CVAT.
+R1 E4B2-125A giữ nguyên. Rework **823C-842B** là XML lấy nguyên bytes từ B2-dense-rework-cvat-export.zip do CVAT xuất sau import vào job30/task47. Mã 00BC-F291 là bản local trước vòng CVAT, được giữ trong lịch sử lock. cvat_roundtrip.json ghi tác vụ import/export đều finished; so sánh toàn bộ nhãn xác nhận không mất/đổi hình, class, thuộc tính hoặc group.
 
-Matched 15→19, missing 5→1, spurious 4→2: sửa class van, siết Bike, thêm Truck bị che ở 062370; sửa Car vẽ thiếu ở 117120. Bỏ ba box thật dưới H=40 không làm đổi metric vì matcher đã lọc chúng. Giữ Bus/ThreeWheeler 117120 chờ QA; không sửa reference R7 nghi trùng.
+Matched 15→19, missing 5→1, spurious 4→2. Đã sửa van, Bike và Truck bị thiếu ở 062370; Car vẽ thiếu ở 117120; bỏ ba box dưới H40. Giữ các ca reference nghi trùng và Bus/ThreeWheeler còn cần QA. Không sửa số bằng tay hoặc ép nhãn theo reference.
 
-Các mã XML_box... không được hàm rework ánh xạ thành L/R in-scope, nên báo “không áp dụng”; đã kiểm trực tiếp XML sửa. C0 không thuộc B2 và chưa được sửa trong bản rework này. Bảng số không chỉnh tay.
-
-Bảng trạng thái được tính lại sau khi đổi peer QA sang B4-center của Duy. Dòng 270517 L3 ATTRIBUTE thuộc bài Duy nên không áp dụng cho rework B2-dense.
+Các mã XML_box... không được hàm rework ánh xạ thành L/R nên có dòng không áp dụng; đã kiểm trực tiếp nhãn sau export. C0 và QA B4-center của Duy không thuộc bản sửa B2-dense này. Việc hoàn thành vòng CVAT không đồng nghĩa các escalation đã được người nhận phê duyệt.

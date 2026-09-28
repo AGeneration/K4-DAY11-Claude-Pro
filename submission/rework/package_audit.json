@@ -24,5 +24,9 @@
     }
   ],
   "cvat_export_verified": false,
-  "purpose": "Local CVAT import package; not a newly verified CVAT export."
+  "purpose": "Historical local package actually imported into CVAT; final deliverable is the subsequent CVAT export.",
+  "historical_import_package": true,
+  "subsequent_cvat_roundtrip_verified": true,
+  "final_export_file": "B2-dense-rework-cvat-export.zip",
+  "final_lock_code": "823C-842B"
 }

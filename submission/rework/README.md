@@ -1,27 +1,15 @@
-# Bản rework B2-dense để import CVAT
+# Rework cuối — đã import và export lại qua CVAT
 
-File đã chuẩn bị: **B2-dense-rework-import.zip**. ZIP có đúng một file `annotations.xml`, nguyên bytes của `annotations-v2.xml` đã khóa **00BC-F291**. Không chứa ảnh/cache. Có thể dùng XML trực tiếp theo hướng dẫn repo.
+File nộp: [B2-dense-rework-cvat-export.zip](B2-dense-rework-cvat-export.zip). XML trích nguyên bytes: [annotations-v2.xml](annotations-v2.xml). Mã khóa hiện tại: **823C-842B**.
 
-## Những thay đổi đã thực hiện
+Đã thực hiện trên CVAT local 2.75.1: sao lưu nhãn job30 → xác minh bản cũ khớp export job30 gốc → import bản sửa vào task47 → chờ finished → đọc nhãn đã lưu trên server → export CVAT for images 1.1, không kèm ảnh → tải ZIP và kiểm toàn bộ hình/thuộc tính → relock. Thao tác qua API của CVAT bằng phiên server tạm, không mô tả là bấm Ctrl+S trên giao diện.
 
-- 062370: đổi van Truck thành Car theo R04; siết box Bike về (487;783;531;859); thêm Truck bị che tại (316;740;418;818).
-- 069450: bỏ Car nhỏ có chiều cao 24.46 px, dưới ngưỡng R01.
-- 117120: sửa Car vẽ thiếu thành (348;918;396;961); bỏ hai Car nhỏ dưới 40 px. Giữ Bus và ThreeWheeler còn tranh luận để QA phân xử.
+Ba ảnh: 062370 (8 box), 069450 (5 box), 117120 (8 box); mỗi ảnh có 3 polygon. Tổng 21 box, 9 polygon. Tất cả geometry/class/attributes/group khớp bản sửa có căn cứ trước import.
 
-R1 gốc E4B2-125A được giữ nguyên để đối chứng. Delta: matched 15→19, missing 5→1, spurious 4→2. Không thêm box reference nghi trùng để làm đẹp số.
+Thay đổi: đổi van thành Car, siết Bike, thêm Truck bị che ở 062370; bỏ Car dưới 40 px ở 069450; sửa Car vẽ thiếu và bỏ hai Car nhỏ ở 117120. Giữ ca Bus/ThreeWheeler đang escalation. Delta matched 15→19, missing 5→1, spurious 4→2.
 
-## Thao tác còn lại trên CVAT
+Bằng chứng: [cvat_roundtrip.json](cvat_roundtrip.json), [provenance.json](provenance.json), [delta.md](delta.md), [overlay](rework_overlay.html). R1 E4B2-125A giữ nguyên. ZIP import 00BC-F291 và local_proposal_provenance.json là lịch sử trước export, không phải mã nộp hiện tại.
 
-1. Mở đúng task B2-dense có ba ảnh 062370, 069450, 117120. Lưu bản export hiện tại trước khi import ghi đè nhãn.
-2. Tại trang task, Actions → Upload annotations → CVAT 1.1; chọn `annotations-v2.xml` (hoặc ZIP nếu giao diện nhận ZIP).
-3. Mở job kiểm ba frame, đặc biệt các thay đổi kể trên, rồi Ctrl+S. Export job dataset → CVAT for images 1.1, tắt Save images, tải ZIP mới.
-4. Dùng ZIP mới để relock sau khi ghi lý do trong decision log; chạy lại `rework`, `triage`, `check` và cập nhật mã/hash/provenance nếu thay đổi. Không sửa trực tiếp XML đã khóa.
+Không cần import lại gói này: CVAT job30 đã có nhãn sửa. Các escalation về chất lượng vẫn chờ người nhận phân xử; lock chứng minh tính toàn vẹn, không thay phê duyệt QA.
 
-```powershell
-py -3.11 lab11.py lock rework "DUONG_DAN_ZIP_CVAT_MOI" --relock
-py -3.11 lab11.py rework
-py -3.11 lab11.py triage
-py -3.11 lab11.py check
-```
-
-ZIP này được đóng gói tại máy từ bản sửa có trợ lý hỗ trợ; chưa có vòng Save/export CVAT được xác minh. `package_audit.json` kiểm hash, tên ảnh, số hình và ZIP/XML khớp bytes; không tự chứng minh chất lượng hoặc thao tác CVAT. `rework_overlay.html` giúp xem nhãn sửa khi mở trong repo có assets/images; chỉ số L thuộc bản rework, không thay mã trong findings R1.
+CVAT đổi metadata `source` thành `file` khi import nên lock mới ghi `prefill_kept=21`. Đây là dấu vết import, không chứng minh 21 box được giữ nguyên từ prefill đầu bài. So sánh đã kiểm geometry/class/attributes/group; lịch sử thao tác và bản trước import vẫn được giữ. Hash XML thay đổi theo export CVAT dù nội dung nhãn sửa tương đương.
