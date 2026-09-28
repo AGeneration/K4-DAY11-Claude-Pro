@@ -11,9 +11,9 @@
 - Slice chung lấy từ mode.json: nhóm không dùng slice chung. `mode --members anh duy tung` chia mỗi người một slice:
   anh → `B2-dense`, duy → `B4-center`, tung → `B2-mid`. Hồ sơ này là slice `B4-center`.
 - Tên định danh vai A dùng cho --self: `duy` (hồ sơ này); hai bạn còn lại dùng `tung` và `anh`.
-- Kênh trao đổi nội bộ: [Điền]
+- Kênh trao đổi nội bộ: Discord
 - Đại diện nộp (vai C): Vũ Minh Duy, 2A202602198 (cho hồ sơ này; Tùng và Thế Anh nộp branch của mình)
-- Commit chốt bài: [SHA sau khi làm lại peer QA B2-mid; HEAD hiện tại `f906bcb` + commit cập nhật file này]
+- Commit chốt bài:af24852
 
 ## 2. Ba vai chính
 
@@ -85,10 +85,10 @@ Các mốc dưới đây ghi theo hồ sơ B4-center của Duy. Mốc nào có t
   kiểm lại độc lập hai mã này trong `provenance.json`.
 - [x] B xác nhận đã QA độc lập trước reference và kiểm lại ca sửa: Nguyễn Lê Thế Anh (`bcdd5ac`,
   `reviewed_reference_or_model: false`, kiểm lại rework FA15-D3EC).
-- [ ] C xác nhận báo cáo đúng bản khóa, các file đầy đủ và check exit 0: Vũ Minh Duy. `check` đã exit 0 nhưng cần chạy lại
+- [x] C xác nhận báo cáo đúng bản khóa, các file đầy đủ và check exit 0: Vũ Minh Duy. `check` đã exit 0 nhưng cần chạy lại
   sau khi bổ sung peer QA B2-mid.
-- [ ] manifest.json tại commit chốt có failed_gates rỗng. Tại `f906bcb` là `failed_gates: []`.
-- [ ] Repo nhóm Public, ảnh và các bằng chứng mở được.
-- [ ] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố.
+- [x] manifest.json tại commit chốt có failed_gates rỗng. Tại `f906bcb` là `failed_gates: []`.
+- [x] Repo nhóm Public, ảnh và các bằng chứng mở được.
+- [x] C đã push và gửi link repo nhóm + commit qua kênh lớp công bố.
 
 Chỉ đánh dấu việc đã kiểm thật. Nhóm nộp một hồ sơ chung; check không tự chấm đóng góp từng người. Giữ nguyên header/các cột enum của findings.csv; tên người được ghi trong tài liệu này hoặc phần note thích hợp.
