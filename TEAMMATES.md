@@ -13,7 +13,7 @@
 - Tên định danh vai A dùng cho --self: `duy` (hồ sơ này); hai bạn còn lại dùng `tung` và `anh`.
 - Kênh trao đổi nội bộ: Discord
 - Đại diện nộp (vai C): Vũ Minh Duy, 2A202602198 (cho hồ sơ này; Tùng và Thế Anh nộp branch của mình)
-- Commit chốt bài: commit "P3 peer QA B2-mid" trên branch này (sau `6274e7b`); `lab11.py check` exit 0
+- Commit chốt bài: `ff9fa5b` (P3 peer QA B2-mid; `lab11.py check` exit 0)
 
 ## 2. Ba vai chính
 
