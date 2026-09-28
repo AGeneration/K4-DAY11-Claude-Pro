@@ -1,6 +1,5 @@
+__pycache__/
 data/
 exports/
-build/
-.[e]nv
-__pycache__/
-*.pyc
+/submission/
+/svm11/

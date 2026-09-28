@@ -1,0 +1,12 @@
+data/
+exports/
+build/
+.[e]nv
+__pycache__/
+*.pyc
+
+# Local review artifacts and browser profiles
+completion_work/
+recovery_B2_dense/
+cvat_final/
+_publish/

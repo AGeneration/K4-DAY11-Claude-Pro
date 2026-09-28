@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/AGeneration/K4-DAY11-Claude-Pro",
+  "branch": "vu-minh-duy-2a202602198",
+  "commit": "79fdaacdf8a056a2c1858fd67ab57a6b20150514",
+  "source_path": "submission/r1_craft/annotations.xml",
+  "slice": "B4-center",
+  "lock_code": "34BC-63D5",
+  "sha256": "34bc63d57a96f592abe7c1091da7c700bdd63c7f56317727ad46796d863f768b",
+  "reviewer": "NguyenLeTheAnh-2A202602164 (assistant-supported)",
+  "reviewed_reference_or_model": false,
+  "source_mutated": false,
+  "rework_code": "FA15-D3EC",
+  "rework_sha256": "fa15d3ec04e86ec04651ba580dc5d3887dd16d204f332abda5cfd2511c26a1f9",
+  "sequence": "R1 observations recorded before reading rework; rework then checked separately. R1 identical to previous commit."
+}

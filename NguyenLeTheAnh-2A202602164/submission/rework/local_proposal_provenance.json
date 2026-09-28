@@ -1,0 +1,19 @@
+{
+  "source_r1_code": "E4B2-125A",
+  "source_r1_sha256": "e4b2125afb4550b6a2b0cc5c7f993756e14d34770cfef5bcba75200d6d04ef7e",
+  "origin": "Local proposed edits to a copy of the exact user job30 export.",
+  "code": "00BC-F291",
+  "sha256": "00bcf291f96afeb8399a367374e0c17fdc66f0b150756f03597f6e4e23a05a54",
+  "frames": [
+    "adasind_062370.jpg",
+    "adasind_069450.jpg",
+    "adasind_117120.jpg"
+  ],
+  "changes": [
+    "062370: Truck van -> Car; tighten Bike XML3; add occluded Truck.",
+    "069450: remove Car XML6 below H=40.",
+    "117120: correct Car XML2 visible outline; remove small Car XML3/XML6; preserve unresolved Bus and ThreeWheeler."
+  ],
+  "cvat_roundtrip_verified": false,
+  "status": "Import and re-export from CVAT required before claiming this is a CVAT final export. Lock certifies local bytes only."
+}

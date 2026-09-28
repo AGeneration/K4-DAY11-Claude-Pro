@@ -1,0 +1,28 @@
+{
+  "members": [
+    "anh",
+    "duy",
+    "tung"
+  ],
+  "assignments": {
+    "anh": "B2-dense",
+    "duy": "B4-center",
+    "tung": "B2-mid"
+  },
+  "self": "anh",
+  "slice": "B2-dense",
+  "degrade": [
+    "stretch",
+    "k12"
+  ],
+  "current_slice": "B2-dense",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": [
+    "adasind_062370.jpg:1",
+    "adasind_062370.jpg:2",
+    "adasind_062370.jpg:3",
+    "adasind_062370.jpg:4",
+    "adasind_062370.jpg:5"
+  ]
+}

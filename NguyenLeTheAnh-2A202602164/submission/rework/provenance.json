@@ -1,0 +1,27 @@
+{
+  "source_r1_code": "E4B2-125A",
+  "source_r1_sha256": "e4b2125afb4550b6a2b0cc5c7f993756e14d34770cfef5bcba75200d6d04ef7e",
+  "origin": "CVAT 2.75.1 job 30 annotations export after importing the corrected labels through CVAT API.",
+  "code": "823C-842B",
+  "sha256": "823c842b5fc87c56bddd58e8d6ea5bda48810f351bb3331328e09b56c8aa4037",
+  "frames": [
+    "adasind_062370.jpg",
+    "adasind_069450.jpg",
+    "adasind_117120.jpg"
+  ],
+  "changes": [
+    "062370: Truck van -> Car; tighten Bike XML3; add occluded Truck.",
+    "069450: remove Car XML6 below H=40.",
+    "117120: correct Car XML2 visible outline; remove small Car XML3/XML6; preserve unresolved Bus and ThreeWheeler."
+  ],
+  "cvat_roundtrip_verified": true,
+  "status": "CVAT import and export completed; every frame, shape, geometry, attribute and group matched the intended rework.",
+  "task_id": 47,
+  "job_id": 30,
+  "task_name": "Day11 · ADASIND · B2-dense · raw_fisheye",
+  "export_file": "B2-dense-rework-cvat-export.zip",
+  "export_zip_sha256": "2420f41d5c92295cce54eaf6d84b7585af250b4830ceebee6660514aa47c4b46",
+  "prior_local_code": "00BC-F291",
+  "prior_local_sha256": "00bcf291f96afeb8399a367374e0c17fdc66f0b150756f03597f6e4e23a05a54",
+  "execution": "CVAT REST endpoints through a temporary authenticated server-side session on the local Docker instance; no UI Save click claimed. Session closed after each operation."
+}

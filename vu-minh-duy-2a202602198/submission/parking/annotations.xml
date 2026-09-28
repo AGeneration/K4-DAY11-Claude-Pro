@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>69</id>
+      <name>Day11 · parking_line · public-sample</name>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-09-28 09:32:09.877411+00:00</created>
+      <updated>2026-09-28 10:23:16.852019+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>0</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>69</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://cvat-server:8080/api/tasks/69/dataset/export/api/jobs/69</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>minhd</username>
+        <email>minhduyvu14b3@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>parking_line</name>
+          <color>#ffcc00</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>free_space</name>
+          <color>#35c98b</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-09-28 14:22:06.001344+00:00</dumped>
+  </meta>
+  <image id="0" name="parking-lot-core.jpg" width="960" height="720">
+    <polyline label="parking_line" source="manual" occluded="0" points="176.00,523.90;247.40,563.60" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="280.00,519.60;421.00,554.00" z_order="0">
+    </polyline>
+    <polygon label="free_space" source="manual" occluded="0" points="0.00,679.80;955.76,588.50;958.20,521.20;803.70,535.80;579.20,550.10;0.55,580.98;0.00,628.64" z_order="0">
+    </polygon>
+  </image>
+</annotations>

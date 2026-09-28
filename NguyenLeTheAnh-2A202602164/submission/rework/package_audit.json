@@ -1,0 +1,32 @@
+{
+  "archive": "B2-dense-rework-import.zip",
+  "archive_sha256": "97f18b4c925fa17b0d06253bef3ebc3bdcc0ca4f0af5cf911806b08c6ee235e8",
+  "xml_sha256": "00bcf291f96afeb8399a367374e0c17fdc66f0b150756f03597f6e4e23a05a54",
+  "lock_code": "00BC-F291",
+  "source_r1_code": "E4B2-125A",
+  "xml_matches_locked_rework": true,
+  "zip_roundtrip_bytes_equal": true,
+  "frames": [
+    {
+      "frame": "adasind_062370.jpg",
+      "boxes": 8,
+      "polygons": 3
+    },
+    {
+      "frame": "adasind_069450.jpg",
+      "boxes": 5,
+      "polygons": 3
+    },
+    {
+      "frame": "adasind_117120.jpg",
+      "boxes": 8,
+      "polygons": 3
+    }
+  ],
+  "cvat_export_verified": false,
+  "purpose": "Historical local package actually imported into CVAT; final deliverable is the subsequent CVAT export.",
+  "historical_import_package": true,
+  "subsequent_cvat_roundtrip_verified": true,
+  "final_export_file": "B2-dense-rework-cvat-export.zip",
+  "final_lock_code": "823C-842B"
+}

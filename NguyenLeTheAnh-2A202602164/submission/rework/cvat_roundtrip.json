@@ -1,0 +1,64 @@
+{
+  "cvat_version": "2.75.1",
+  "task_id": 47,
+  "job_id": 30,
+  "task_name": "Day11 · ADASIND · B2-dense · raw_fisheye",
+  "backup_zip_sha256": "b3b4251e753d017ad4e0dc77bb8713b7526b42676b23d004256cabd281d3ed8d",
+  "backup_matches_original_job30_zip": true,
+  "import": {
+    "status": "finished",
+    "message": "",
+    "id": "action=import&target=job&target_id=30&subresource=annotations",
+    "operation": {
+      "type": "import:annotations",
+      "target": "job",
+      "project_id": 7,
+      "task_id": 47,
+      "job_id": 30,
+      "org_id": null,
+      "format": null,
+      "lightweight": null
+    },
+    "progress": 0.0,
+    "created_date": "2026-09-28T14:59:41.225375Z",
+    "started_date": "2026-09-28T14:59:41.282717Z",
+    "finished_date": "2026-09-28T14:59:42.538372Z",
+    "expiry_date": "2026-09-28T15:59:42.538372Z",
+    "owner": {
+      "id": 1,
+      "username": "admintheanh"
+    },
+    "result_url": null,
+    "result_id": null
+  },
+  "export": {
+    "status": "finished",
+    "message": "",
+    "id": "action=export&target=job&target_id=30&user_id=1&format=CVAT_for_images_1~1&subresource=annotations",
+    "operation": {
+      "type": "export:annotations",
+      "target": "job",
+      "project_id": 7,
+      "task_id": 47,
+      "job_id": 30,
+      "org_id": null,
+      "format": "CVAT for images 1.1",
+      "lightweight": null
+    },
+    "progress": 0.0,
+    "created_date": "2026-09-28T15:00:19.084607Z",
+    "started_date": "2026-09-28T15:00:19.153634Z",
+    "finished_date": "2026-09-28T15:00:20.230600Z",
+    "expiry_date": "2026-09-29T15:00:20.230600Z",
+    "owner": {
+      "id": 1,
+      "username": "admintheanh"
+    },
+    "result_url": "http://localhost:8080/api/jobs/30/dataset/download?rq_id=action%3Dexport%26target%3Djob%26target_id%3D30%26user_id%3D1%26format%3DCVAT_for_images_1~1%26subresource%3Dannotations",
+    "result_id": null
+  },
+  "export_zip_sha256": "2420f41d5c92295cce54eaf6d84b7585af250b4830ceebee6660514aa47c4b46",
+  "export_xml_sha256": "823c842b5fc87c56bddd58e8d6ea5bda48810f351bb3331328e09b56c8aa4037",
+  "all_shapes_attributes_groups_match_local_proposal": true,
+  "authentication": "Temporary session for the task owner through local Docker administration; closed after each call. No credentials retained."
+}

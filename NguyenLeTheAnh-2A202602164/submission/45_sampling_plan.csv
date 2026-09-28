@@ -1,0 +1,9 @@
+camera_id,slice_type,frames,risk,rationale
+front,normal,30,Ưu tiên kiểm tra cơ sở,Lấy ngẫu nhiên theo chuyến và điều kiện sáng trong tầng cảnh thường trước xe; phân bổ đề xuất khi chưa có tần suất lỗi bốn camera
+front,hard,30,Ưu tiên soát cao,Chọn rider bị che và xe gần ngưỡng 40 px; thêm ngược sáng và seam trước-trái hoặc trước-phải; không suy khoảng cách từ zone
+rear,normal,25,Ưu tiên kiểm tra cơ sở,Lấy cảnh thường sau xe ở nhiều chuyến và thời điểm; tránh các frame liên tiếp gần như trùng
+rear,hard,25,Ưu tiên soát cao,Ưu tiên che khuất bởi thân xe và mờ khi lùi; kiểm seam sau-trái hoặc sau-phải; chỉ xác nhận khoảng cách khi có dữ liệu đo
+left,normal,20,Ưu tiên kiểm tra cơ sở,Lấy cảnh thường bên trái có đủ vật thể và cảnh ít vật; giữ nguồn và timestamp để truy vết
+left,hard,25,Ưu tiên soát cao,Ưu tiên xe hai bánh dọc hông và vật bị cắt ở vòng kính; kiểm cả seam trước-trái và sau-trái
+right,normal,20,Ưu tiên kiểm tra cơ sở,Lấy cảnh thường bên phải ở nhiều điều kiện sáng; tránh tái dùng frame tương tự từ cùng một đoạn ngắn
+right,hard,25,Ưu tiên soát cao,Ưu tiên người cạnh lề và vật bị che hoặc méo rìa; kiểm seam trước-phải và sau-phải

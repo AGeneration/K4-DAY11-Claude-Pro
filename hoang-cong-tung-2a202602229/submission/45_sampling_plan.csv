@@ -1,0 +1,9 @@
+camera_id,slice_type,frames,risk,rationale
+front,normal,30,medium,Đo baseline chất lượng nhãn trên camera đối mặt rủi ro va chạm trực diện cao nhất
+front,hard,20,high,Ưu tiên nhiều nhất: người đi bộ/xe cắt ngang gần ống kính, ánh sáng ngược, vật gần sát viền fisheye
+rear,normal,30,medium,Đo baseline khi lùi/đỗ xe, kiểm tra nền tảng nhãn vùng phía sau
+rear,hard,20,high,Ca khó khi lùi xe: vật cản thấp (trẻ em, cọc tiêu), xe cắt ngang bất ngờ, vùng mù gần đuôi xe
+left,normal,35,low,Cảnh thường bên hông trái phần lớn lặp lại (làn đường, xe đỗ), rủi ro thấp hơn front/rear
+left,hard,15,medium,Xe máy/xe đạp vượt trong điểm mù, vật thể ở vùng chồng (seam) với front/rear tại góc xe
+right,normal,35,low,Tương tự bên trái, cảnh thường bên hông phải
+right,hard,15,medium,Ca khó bên phải: người đi bộ sát lề, seam với camera trước/sau tại góc xe
