@@ -1,0 +1,19 @@
+round: rework
+slice: B2-mid
+sha256: cf642680db772af685f943306b1fe4a299b5c2f6c4b6e2bd33c7be121d90432a
+code: CF64-2680
+locked_at: 2026-09-28T21:55:05+07:00
+shapes: box=23, polygon=13
+prefill_kept: 23
+prefill_edited: 0
+new: 0
+history:
+  round: rework
+  slice: B2-mid
+  sha256: 6d7bbc3ac2da808e044f99fa339234c193af7950b961e8a1728f06e03b1b61ee
+  code: 6D7B-BC3A
+  locked_at: 2026-09-28T21:47:54+07:00
+  shapes: box=20, polygon=13
+  prefill_kept: 2
+  prefill_edited: 3
+  new: 15

@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/AGeneration/K4-DAY11-Claude-Pro",
+  "branch": "hoang-cong-tung-2a202602229",
+  "commit": "c86eea2158ffe6b32fc9d394d254de125b1f2b9a",
+  "source_path": "submission/r1_craft/annotations.xml",
+  "slice": "B2-mid",
+  "lock_code": "24F8-C550",
+  "sha256": "24f8c5502fa27f3285abfc93b6d53a787de5097e8ddbbdcd4dad43a650621354",
+  "reviewer": "vu-minh-duy-2a202602198 (assistant-supported)",
+  "reviewed_reference_or_model": false,
+  "source_mutated": false,
+  "rework_commit": "0bf94b0",
+  "rework_code": "CF64-2680",
+  "rework_sha256": "cf642680db772af685f943306b1fe4a299b5c2f6c4b6e2bd33c7be121d90432a",
+  "sequence": "R1 observations QA-TUNG-01..07 recorded from raw images + R1 XML before reading rework; rework then checked separately. R1 unchanged between c86eea2 and 0bf94b0."
+}
