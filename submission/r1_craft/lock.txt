@@ -1,0 +1,9 @@
+round: r1_craft
+slice: B2-mid
+sha256: 24f8c5502fa27f3285abfc93b6d53a787de5097e8ddbbdcd4dad43a650621354
+code: 24F8-C550
+locked_at: 2026-09-28T18:48:57+07:00
+shapes: box=17, polygon=14
+prefill_kept: 3
+prefill_edited: 0
+new: 14
