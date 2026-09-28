@@ -1,1 +1,18 @@
 id,date,question,decision,rationale,status
+REC-01,2026-09-28,ZIP job29 không đúng B2-dense,Giữ ZIP gốc; bản bàn giao dùng hai ảnh đúng theo giảm frame3,"Không dùng nhãn trợ lý đề xuất cho 117120; lọc đúng node ảnh và ghi hash trong export_provenance.json; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
+REC-02,2026-09-28,Xe van trong 062370 là Truck hay Car,Đã sửa thành Car trong bản rework local,R04 và ảnh xác nhận van chở người; chưa có CVAT roundtrip,proposed
+REC-03,2026-09-28,Box Car L6 trong 069450 có thuộc phạm vi,Đã bỏ box khỏi rework local,H=24.46 px <40; không làm đổi metric vì matcher vốn lọc box này,proposed
+CAL-01,2026-09-28,C0 L8 và người áo vàng trên xe đạp,Cần QA phân xử rider hay người dắt xe,Vùng blur che chân và L8 chỉ ôm một phần xe; cần đối chiếu R03 trước khi sửa L2 hoặc L8,escalated
+CAL-02,2026-09-28,C0 thiếu ego_body và có box L9 dưới ngưỡng,Ghi lỗi và giữ nguyên export đã khóa,Selfqc báo thiếu ego_body và L9 dưới 40 px; chưa tạo bản sửa C0 để không làm mất dấu lock,pending
+REC-04,2026-09-28,Nguồn nhãn ảnh 117120,Không dùng bản đề xuất 117120 trong hồ sơ đánh giá,"Người học cung cấp lại ZIP gốc; giữ bản hỗ trợ ba ảnh riêng để tránh nhận nhãn trợ lý là export người học; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
+PLAN-01,2026-09-28,Phân bổ 200 frame cho bốn camera,Giữ 60 front;50 rear;45 left;45 right,Có đủ normal và hard cho từng camera; phân bổ giả lập cần hiệu chỉnh khi có lỗi thực đo,proposed
+SCOPE-01,2026-09-28,Giảm phạm vi để dùng nhãn đã cung cấp,Ghi stretch rồi k12 rồi frame3; không giảm findings,"ZIP gốc thiếu 117120 và không có K12; chỉ giữ hai frame đúng; chưa tuyên bố Coach phê duyệt; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
+TOOL-01,2026-09-28,Compare đếm ảnh đã giảm thành missing,Dùng cùng evaluation_frames cho compare/model/iou-sweep/rework,Local-quality đã bỏ ảnh giảm nhưng các báo cáo khác chưa làm; đã sửa thống nhất phạm vi và 57 test qua; sửa ở workspace local cho lượt giảm tạm; hồ sơ full3 không phụ thuộc thay đổi này.,resolved
+QA-01,2026-09-28,Không có export/mã khóa từ Duy,Review mù có trợ lý hỗ trợ trên bản khóa của mình sau hơn 5 phút,QA ghi trước khi reveal; không mạo nhận là review độc lập của thành viên khác,recorded
+DIAG-01,2026-09-28,Reference R7 có trùng R5 không,Không thêm box trùng; nhờ QA adjudicate reference,Ảnh 05 và tọa độ cho thấy R7 nằm trong R5 trên cùng xe ba bánh; giữ số missing chờ phân xử,escalated
+DIAG-02,2026-09-28,Năm xe ba bánh và hai rider khác policy model,Nhờ ai_team kiểm mapping và policy trước khi quy kết domain,Năm ThreeWheeler bị gọi Truck trên hai frame; M3/M4 tách rider; không quy kết fisheye chỉ từ pattern này,escalated
+REWORK-01,2026-09-28,Các ca có căn cứ cần sửa,Tạo bản sửa local và khóa riêng 79DF-6639,"Đổi van; siết Bike; thêm Truck bị che; bỏ box dưới H40; chưa được CVAT export lại; đã thay bằng JOB30-01/JOB30-02, hiện đủ ba ảnh.",superseded
+META-01,2026-09-28,Cảnh báo tên task từ export job,Giữ metadata gốc và yêu cầu xác nhận tên trong CVAT,Parser đọc nhầm tên label Bus khi meta/job không có name; chưa chứng minh tên task sai,pending
+JOB30-01,2026-09-28,Nhận export job30 đủ ba ảnh,Khóa lại r1 từ nguyên XML job30; bỏ giảm frame3,Người học đã cung cấp 117120; báo cáo hai ảnh trước đây lưu riêng trong lịch sử local,resolved
+JOB30-02,2026-09-28,Bản sửa local cũ chỉ có hai frame,Tạo lại rework từ r1 job30 đủ ba ảnh và relock,Sửa ca có căn cứ; giữ Bus và ThreeWheeler của 117120 đang escalation; chưa có CVAT roundtrip,proposed
+JOB30-03,2026-09-28,117120 L3/L7 bị báo spurious nhưng có vật thật,Giữ nhãn và nhờ QA phân xử class/reference; AI team kiểm M8/M10,Ảnh 07 cho thấy phương tiện nhỏ và ThreeWheeler bị che; không xóa để tăng precision,escalated

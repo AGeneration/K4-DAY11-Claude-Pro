@@ -1,0 +1,16 @@
+{
+  "source_zip": "job_30_annotations_2026_09_28_12_20_09_cvat for images 1.1.zip",
+  "source_zip_sha256": "b3b4251e753d017ad4e0dc77bb8713b7526b42676b23d004256cabd281d3ed8d",
+  "source_xml_sha256": "e4b2125afb4550b6a2b0cc5c7f993756e14d34770cfef5bcba75200d6d04ef7e",
+  "locked_xml_sha256": "e4b2125afb4550b6a2b0cc5c7f993756e14d34770cfef5bcba75200d6d04ef7e",
+  "frames": [
+    "adasind_062370.jpg",
+    "adasind_069450.jpg",
+    "adasind_117120.jpg"
+  ],
+  "transformation": "None: exact annotations.xml bytes extracted from user-supplied CVAT job30 ZIP.",
+  "frame3_reduction": false,
+  "k12_reduction": true,
+  "previous_two_frame_submission": "Superseded; retained only in local completion_work/history-before-job30.",
+  "review_provenance": "The first two images were reviewed before reference during the earlier job29 pass. Their geometry/classes are unchanged in job30; third image review is recorded separately. This is an assisted continuation, not a claim of a second fully blind review."
+}
